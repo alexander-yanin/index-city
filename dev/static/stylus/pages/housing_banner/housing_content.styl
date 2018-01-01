@@ -1,0 +1,345 @@
+.housing-content
+  size(100%, auto)
+
+  .axiom-cart
+    size(100%, auto);
+    min-heght 395px;
+    border-radius 2px
+    background-color #ffffff
+    box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.31)
+
+    &-title
+      size(100%, 50px)
+      background-color #33beca
+      font-family SourceSansPro
+      font-size rem(28px)
+      text-align left
+      line-height 50px
+      color #fff
+      padding 0 20px
+
+    &-content
+      width 100%
+      max-height 400px
+      padding 16px 20px 0
+      display flex
+      flex-direction column
+      flex-wrap: wrap
+
+    &-footer
+      padding 0 20px 14px
+
+.housing-gallery
+  size(100%, auto)
+
+
+  &-main
+    position relative
+    size(100%, 327px)
+    img
+      size(100%)
+
+    .arrow-prev, .arrow-next
+      position absolute
+      size(31px, 31px)
+      border-radius 50%
+      background #f3f3f3
+      .icon-back, .icon-next
+        size(20px)
+        position absolute
+        left 50%
+        top 50%
+        transform translate(-50%, -50%)
+    .arrow-prev
+      left 16px
+      top 50%
+      transform translateY(-50%)
+    .arrow-next
+      right 16px
+      top 50%
+      transform translateY(-50%)
+
+  &-slides
+    display flex
+    flex-wrap wrap
+    justify-content flex-start
+    size(100%, auto)
+    padding-top 0
+
+  &-slide
+    width calc(20% - 7px)
+    //size(20%, 58px)
+    height 58px
+    border-radius 2px
+    box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.31)
+    margin-right 8px
+    margin-top 10px
+    cursor pointer
+    &:nth-child(5n+5)
+      margin-right 0
+
+    &.active
+      border solid 2px #1178d3
+
+.housing-block
+  size(100%, auto)
+  margin-top 20px
+  padding 10px 20px 20px
+  border-radius 2px
+  background-color #ffffff
+  box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.31)
+  border solid 1px rgba(0, 0, 0, 0.05)
+
+  &-title
+    position relative
+    display inline
+    font-family SourceSansPro
+    font-size 24px
+    margin-bottom 8px
+    text-align left
+    color #323232
+    &:after
+      content ''
+      position absolute
+      top 50%
+      margin-left 12px
+      transform translateY(-50%)
+      size(202px, 2px)
+      opacity 0.5
+      border solid 1px #787878
+
+  &-text
+    font-family FiraSansRegular
+    font-size rem(16px)
+    line-height 1.69
+    text-align left
+    color #323232
+
+  &-description
+    size(100%, auto)
+
+  &-plan_and_price
+    .housing-block-title:after
+      display none
+    &__link
+      display inline-block
+      margin-left 34px
+      line-height 28px
+      size(190px, 30px)
+      border-radius 5px
+      border solid 1px #33beca
+      font-family SourceSansPro
+      font-size rem(15px)
+      text-align: center
+      color #33beca
+    & table
+      width 100%
+      margin-top 16px
+      .first-cell
+        display flex
+        justify-content space-between
+      tr
+        height 38px
+      th
+        padding 0 8px
+        color rgba(120, 120, 120, 0.87)
+        font-family FiraSansLight
+        font-size rem(14px)
+
+      td
+        font-family PTSans
+        font-size rem(16px)
+        color #323232
+        text-align center
+
+        a
+          color #53c9d3
+          text-decoration underline
+
+  &-payment-tabs
+    margin-top 9px
+
+  &-payment-type__body
+    margin-top 22px
+
+  &-payment-type__tab
+    display inline-block
+    margin-right 14px
+    line-height 38px
+    size(190px, 40px)
+    border-radius 5px
+    border solid 1px #33beca
+    font-family SourceSansBold
+    font-size rem(16px)
+    text-align: center
+    color #33beca
+    &:hover
+      background-color #33beca
+      color #fff
+    &:active
+      background-color #33beca
+      color #fff
+
+  .payment-type-form
+    size(286px, auto)
+    margin-left 20px
+    min-height 262px
+    margin-top 40px
+    border-radius 2px
+    background-color #ffffff
+    box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.31)
+    border solid 1px #007580
+
+    &__title
+      font-family SourceSansPro
+      font-size 16px
+      line-height 1.25
+      text-align center
+      color #2f223a
+      padding 12px 45px
+
+    &__body
+      padding 0 20px
+
+      label
+        font-family FiraSansLight
+        font-size rem(14px)
+        text-align left
+        color rgba(120, 120, 120, 0.87)
+
+      input[type="text"]
+        height 40px
+      input[type="submit"]
+        height 40px
+        border-radius 5px
+        background-color #007580
+        border solid 1px rgba(120, 120, 120, 0.5)
+        color #fff
+        font-family SourceSansPro
+        font-size rem(16px)
+
+  .housing-block-other-offer
+    &__filter
+      display flex
+      flex-direction column
+      flex-wrap wrap
+      -webkit-flex-wrap wrap
+      size(350px, 110px)
+      margin-bottom 20px
+    .other-housing
+      margin-top 10px
+    .axiom-cart-line__value
+      color #33beca
+      text-decoration underline
+      font-family FiraSansSemiBold
+
+  .housing-block-application
+    .application-form
+      margin-top 20px
+      border-right 2px solid #787878
+    .housing-block-title
+      &:after
+        display none
+    .title-input
+      margin-left 6px
+      color rgba(120, 120, 120, 0.87)
+      font-size rem(14px)
+      font-family FiraSansLight
+    input[type="text"]
+      size(246px, 40px)
+      border-radius 3px
+      font-family FiraSansRegular
+      font-size rem(14px)
+
+    .application-submit
+      size(246px, 40px)
+      border-radius 5px
+      background-color #007580
+      border solid 1px rgba(120, 120, 120, 0.5)
+      color #fff
+      font-family SourceSansPro
+      font-size rem(16px)
+
+  .housing-manual
+    margin-top 20px
+  .manual-line
+    display flex;
+    -webkit-flex-direction row
+    margin-bottom 20px
+    .rect
+      size(35px)
+      flex-shrink 0
+      margin-right 30px
+      border-radius 5px
+      background-color #d8d8d8
+    .housing-block-text
+      font-size rem(14px)
+      font-family FiraSansRegular
+      color #000
+
+
+  .check
+    input
+      & + label:before
+        size(20px, 20px)
+        margin-right 6px
+      &:checked + label:after
+        size(15px)
+    label
+      margin-right 14px
+      font-family FiraSansRegular
+      color #000
+      font-size rem(14px)
+
+.housing-map
+  width 100%;
+  max-width 819px;
+  height: 277px;
+
+
+.col-axiom
+  padding-right 0
+
+.axiom-cart-line
+  display block
+  width 50%
+  white-space normal
+  text-align left
+  margin 0 0 12px
+
+  &__title
+    display block
+    word-wrap break-word
+    font-family FiraSansLight
+    font-size rem(14px)
+    color #323232
+  &__value
+    display block
+    font-family FiraSansRegular
+    font-size rem(16px)
+    word-wrap break-word
+    line-height 1.19
+    color rgba(50, 50, 50, 0.87)
+
+
+.tabcontent
+  display none
+
+.modal-view-image
+  z-index 10
+  display none
+  position fixed
+  top 0
+  bottom 0
+  left 0
+  right 0
+  background rgba(0, 0, 0, .6)
+  overflow auto
+  .modal-image
+    position absolute
+    left 50%
+    top 50%
+    transform translate(-50%, -50%)
+    display block
+    max-width 60%
+    height auto

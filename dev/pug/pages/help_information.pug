@@ -1,0 +1,9 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Полезная информация'
+	- var pageClass = 'index-page'
+
+block content
+	include ../modules/filter
+	include help_information/help_information_content

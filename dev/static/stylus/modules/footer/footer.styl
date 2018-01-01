@@ -1,0 +1,91 @@
+footer
+  flex 0 0 auto
+  .footer-top-wrapper
+    background-color #5e5e5e
+
+  .footer-bottom-wrapper
+    background-color #787878
+    box-shadow 0 1px 6px 0 rgba(0, 0, 0, 0.5)
+
+
+.footer-top
+  display flex;
+  justify-content space-between
+  width 100%
+  min-height 50px
+  font-size rem(14px)
+  font-family SourceSansPro
+  background-color #5e5e5e
+
+  .row.align-center
+    display flex
+    align-items center
+    width 100%
+    min-height 50px
+    margin 0 auto
+
+  &__info
+    color #fff
+    &:hover
+      color #fff
+
+    &.phone
+      margin-left 14px
+      font-family SourceSansBold
+      &:hover
+        color #fff
+
+  &__social
+    display flex
+    justify-content center
+
+    img
+      size(24px, 24px)
+
+    a
+      margin-right 10px
+      &:last-child
+        margin 0
+
+  &__feedback
+    text-align right
+
+
+
+
+.footer-bottom
+  display flex
+  align-items center
+  justify-content space-between
+  size(100%, 90px)
+  background-color #787878
+  box-shadow 0 1px 6px 0 rgba(0, 0, 0, 0.5)
+
+  .align-center
+    display flex
+    align-items center
+    size(100%, inherit)
+    margin 0 auto
+
+  .icon-logo
+    fill #fff
+    size(153px, 50px)
+
+  .footer-nav
+    display flex
+    justify-content flex-end
+    align-items center
+
+    &__item
+      margin-left 60px
+
+      &:first-child
+        margin: 0
+
+    &__link
+      font-size rem(18px)
+      font-family SourceSansPro
+      color #fff
+
+.underline
+  text-decoration underline

@@ -1,0 +1,95 @@
+.filter-wrapper
+  width 100%
+  transform translateY(-50%)
+  .filter
+    margin 0 auto
+    //size(1040px, auto)
+    max-width 1040px
+    border-radius 5px
+    background-color #fff
+    box-shadow 0 2px 7px 0 rgba(0, 0, 0, 0.5)
+    .center
+      display flex
+      justify-content flex-start
+      flex-wrap wrap
+      size(100%, inherit)
+      padding 19px 20px 0
+      margin 0 auto
+    .filter-item
+      display flex
+      flex-direction column
+      justify-content flex-end
+      width 200px
+      margin 0
+      padding: 0 20px 14px
+    &-title
+      font-size rem(14px)
+      font-family FiraSansLight
+      text-align left
+      color rgba(120, 120, 120, 0.87)
+    &-select
+      //size(160px, 40px)
+      overflow hidden
+      //size(100%, 40px)
+      border-radius 3px
+      font-family FiraSansRegular
+      font-size rem(14px)
+      color #000
+      border solid 1px rgba(120, 120, 120, 0.5)
+.check
+  flex-direction row
+  align-items center
+  justify-content flex-start
+  input
+    display none
+    & + label
+      position relative
+      top 10px
+      cursor pointer
+      font-family FiraSansLight
+      color rgba(120, 120, 120, 0.87)
+      font-size rem(14px)
+    & + label:before
+      content ''
+      display inline-block
+      size(25px)
+      margin-right 10px
+      font-size rem(12px)
+      line-height 16px
+      vertical-align middle
+      border solid 1px rgba(120, 120, 120, 0.5)
+      border-radius 3px
+    &:checked + label:after
+      content ''
+      position absolute
+      top 3px
+      left 2px
+      background-image url(../img/general/check.svg)
+      background-size contain
+      background-repeat no-repeat
+      size(20px)
+.check
+  label
+    margin-bottom 17px
+
+.filter-fluid
+  transform none
+  .container
+    padding 0
+    margin 0
+    width 100%
+    .filter
+      width 100%
+      max-width 100%
+      .row.center
+        max-width 1040px
+
+.search-button
+  width 160px
+  height 34px
+  font-family SourceSansPro
+  font-size rem(16px)
+  color #fff
+  border-radius 5px
+  background-color #33beca
+  border solid 1px rgba(120, 120, 120, .5)

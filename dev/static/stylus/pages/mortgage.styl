@@ -1,0 +1,385 @@
+.mortgage-tabs
+  width 260px
+  height 266px
+  border-radius 2px
+  background-color #ffffff
+  box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.31)
+  margin-bottom 40px
+
+  &-title
+    height 50px
+    background-color #33beca
+    font-family SourceSansPro
+    font-size rem(28px)
+    padding 7px 20px
+    color #fff
+
+  .mortgage-tabs-container
+    padding 16px 20px
+
+.mortgage-tab
+  display block
+  margin 0 auto 8px
+  width 220px
+  height 40px
+  border-radius 2px
+  border solid 1px #33beca
+  font-family SourceSansPro
+  font-size rem(18px)
+  color #33beca
+  text-align center
+  line-height 35px
+  cursor pointer
+  text-decoration none
+
+  &:last-child
+    margin-bottom 0
+
+  &:hover, &:focus
+    background-color #33beca
+    color #fff
+    text-decoration none
+
+  &.active
+    background-color #33beca
+    color #fff
+    text-decoration none
+
+.mortgage-calculate
+  width 560px
+  height 420px
+  margin 0 auto
+  border-radius 2px
+  background-color #ffffff
+  box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.31)
+  border solid 1px rgba(0, 0, 0, 0.05)
+  padding 17px 32px 17px 20px
+
+.mortgage-calculate-result
+  width 260px
+  height 420px
+  border-radius 2px
+  background-color #ffffff
+  box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.31)
+  border solid 1px rgba(0, 0, 0, 0.05)
+  padding 15px 22px
+
+.mortgage-calculate-title
+  font-family SourceSansPro
+  font-size rem(28px)
+  text-align left
+  color rgba(0, 0, 0, 0.87)
+  margin-bottom 32px
+
+.mortgage-input-group
+  display flex
+  position relative
+  flex-direction row
+  justify-content space-between
+  margin-bottom 45px
+
+  label
+    display flex
+    align-items center
+    font-family FiraSansRegular
+    font-size 16px
+    font-weight normal
+    font-style normal
+    font-stretch normal
+    line-height 1.44
+    letter-spacing normal
+    text-align left
+    color rgba(0, 0, 0, 0.87)
+
+  input, select
+    width 380px
+    background-color transparent
+
+  input[type="text"], select
+    height 40px
+    border-radius 3px
+    background-color #ffffff
+    border solid 1px rgba(120, 120, 120, 0.5)
+    padding 9px 20px
+    font-size rem(16px)
+    font-family FiraSansLight
+    font-weight 300
+    font-style normal
+    font-stretch normal
+    line-height normal
+    letter-spacing normal
+
+
+.input-range > input[type="range"]
+  position absolute
+  bottom -3px
+
+
+input[type="range"]
+  //overflow: hidden;
+  -webkit-appearance: none;
+  background-color: #b6b6b6
+
+input[type='range']::-webkit-slider-runnable-track
+  height: 4px;
+  -webkit-appearance: none;
+
+input[type='range']::-webkit-slider-thumb
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius 50%
+  background-color: #ffffff;
+  //box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px 0 rgba(0, 0, 0, 0.05);
+  border: solid 0.5px rgba(0, 0, 0, 0.1);
+  margin-top -12px
+  cursor: ew-resize;
+  //box-shadow: -105px 0 0 1px #43e5f7;
+
+
+.mortgage-result-group
+  display flex
+  flex-direction: column
+  margin-bottom 16px
+
+  .title
+    font-family: FiraSansLight;
+    font-size: rem(14px)
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323232;
+    margin-bottom 6px
+
+  .value
+    font-family: FiraSansRegular;
+    font-size: rem(20px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.95;
+    letter-spacing: normal;
+    text-align: left;
+    color: #007580;
+
+
+.mortgage-form
+  &-title
+    font-family: SourceSansPro;
+    font-size: rem(16px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2f223a;
+    margin-bottom 10px
+
+  &-group
+    display flex
+    flex-direction column
+    margin-bottom 9px
+
+    label
+      font-family: FiraSansLight;
+      font-size: rem(14px);
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgba(120, 120, 120, 0.87);
+
+    input[type="text"]
+      width 100%
+      height: 40px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      border: solid 1px rgba(120, 120, 120, 0.5);
+
+    input[type="submit"]
+      height: 40px;
+      border-radius: 5px;
+      background-color: #007580;
+      border: solid 1px rgba(120, 120, 120, 0.5);
+      font-family: SourceSansPro;
+      font-size: rem(16px);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+
+
+.mortgage-information
+  background-color #fff
+  padding 17px 20px
+
+.mortgage-information-header
+  display flex
+  flex-direction row
+  justify-content space-between
+  margin-bottom 20px
+
+  h3
+    font-family: SourceSansPro;
+    font-size: 28px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.87);
+
+  .mortgage-tab
+    margin 0
+    
+.mortgage-list
+  max-width 860px
+  margin 0 auto 20px
+
+.mortgage-item
+  display flex
+  flex-direction row
+  width 100%
+  margin-bottom 20px
+  min-height 190px
+  background-color #fff
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.31);
+
+  .mortgage-item__img
+    display inline-block
+    width 260px
+    height 190px
+
+  .mortgage-item-content
+    display inline-block
+    background-color #fff
+    padding 9px 20px 12px
+
+    .mortgage-item__title
+    //margin 9px 0 15px 20px
+      display flex
+      flex-direction row
+      justify-content space-between
+      margin-bottom 15px
+      .name
+        font-family: SourceSansPro;
+        font-size: rem(20px);
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0c0c0c;
+      .rate
+        font-family: SourceSansPro;
+        font-size: rem(20px);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #0c0c0c;
+        word-wrap break-word
+
+    .mortgage-item__text
+      margin-bottom 6px
+      min-height 84px
+      font-family FiraSans
+      font-size 16px
+      font-weight normal
+      font-style normal
+      font-stretch normal
+      line-height 1.75
+      letter-spacing normal
+      text-align left
+      color rgba(50, 50, 50, 0.87)
+
+      a
+        font-family: FiraSans;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        text-align: left;
+        color: #007580;
+        text-decoration underline
+
+    .mortgage-item__link
+      display block
+      width 187px
+      height 38px
+      border-radius 2px
+      text-align center
+      line-height 37px
+      background-color #33beca
+      color #fff
+      text-decoration none
+      font-family SourceSansPro
+      font-size 18px
+
+.mortgage-help-information
+  border-radius: 2px;
+  min-height 265px
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.31);
+  border: solid 1px rgba(0, 0, 0, 0.05);
+  margin-bottom 40px
+  .mortgage-help-information-title
+    height: 50px;
+    border-radius: 2px;
+    background-color: #33beca;
+    font-family: SourceSansPro;
+    font-size: rem(28px);
+    color: #ffffff;
+    padding 0 20px
+    line-height 48px
+  .mortgage-help-information-text
+    font-family: FiraSansRegular;
+    font-size: rem(16px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(50, 50, 50, 0.87);
+    padding 16px 20px
+
+
+.help-information
+  .mortgage-item
+    margin-bottom 16px
+
+.mortgage-help-information-item__link
+  display block
+  width: 187px;
+  height: 40px;
+  color #33beca
+  background-color #fff
+  border-radius: 2px;
+  border: solid 1px #33beca;
+  font-family: SourceSansPro;
+  font-size: 18px;
+  text-align: center;
+  line-height 37px
+  text-decoration none
+
+  &:hover
+    background #33beca
+    color #fff
+    text-decoration none
+
+.help-information-wrapper
+  .mortgage-help-information
+    margin-bottom 31px

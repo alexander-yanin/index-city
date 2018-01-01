@@ -1,0 +1,258 @@
+.housing-content
+	.modal-view-image(onclick="closeModalImage()")
+		img.modal-image
+	.container
+		.row
+			.col-lg-9
+				.col-lg-5.col-axiom
+					.axiom-cart
+						.axiom-cart-title ЖК Аксиома
+						.axiom-cart-content
+							each object in axiom
+								p.axiom-cart-line
+									span.axiom-cart-line__title= object.title
+									span.axiom-cart-line__value= object.value
+						.axiom-cart-footer
+							p.axiom-cart-line
+								span.axiom-cart-line__title Типы оплаты:
+								span.axiom-cart-line__value Наличные  |  Ипотека  |  Мат.капитал
+				.col-lg-7
+					.housing-gallery(id="gallery-slider")
+						.housing-gallery-main
+							img(src="/static/img/content/houseroom/houseroom.jpg")
+							a(href="#").arrow-prev
+								+icon('back')
+							a(href="#").arrow-next
+								+icon('next')
+						.housing-gallery-slides
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello0.jpg" num-slide-img="0").housing-gallery-slide.active
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello1.jpg"   num-slide-img="1").housing-gallery-slide
+							img(src="/static/img/content/index/slide-bg.jpg" data-basic="hello2.jpg"  num-slide-img="2").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello3.jpg"  num-slide-img="3").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello4.jpg"  num-slide-img="4").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello5.jpg"  num-slide-img="5").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello6.jpg"  num-slide-img="6").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello7.jpg"  num-slide-img="7").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello8.jpg"  num-slide-img="8").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello9.jpg"  num-slide-img="9").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello10.jpg"  num-slide-img="10").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello11.jpg"  num-slide-img="11").housing-gallery-slide
+
+				.col-lg-12
+					.housing-block
+						.housing-block-description
+							.housing-block-title Описание
+							p.housing-block-text Высотный и стильный жилой комплекс «Аксиома» от известного застройщика ЗАО «Строитель» возводится в самом сердце Левого берега Новосибирска. Будущим жильцам ЖК «Аксиома» будет доступна вся развитая инфраструктура этого района. Рядом несколько крупных торговых центров, множество магазинов и кафе. Здесь проходят крупные автомагистрали, в пешей доступности станция метро. Застройщик славно потрудился над проектом благоустройства. Во дворе дома появится многоуровневая площадка с детскими площадками, цветником, зоной отдыха и спортивными объектами.
+
+				.col-lg-12
+					.housing-block
+						.housing-block-map
+							.housing-block-title Карта
+							.housing-map(id="map")
+
+				.col-lg-12
+					.housing-block
+						.housing-block-plan_and_price
+							.housing-block-title Планировки и цены
+								a(href="#").housing-block-plan_and_price__link Подать заявку на подбор
+							table
+								tr
+									th Планировка
+									th Этаж
+									th Площадь (кв.м)
+									th Срок сдачи
+									th Цена за кв.м. от
+									th Цена квартиры от (руб.)
+									td
+								each object in [1, 2, 3, 4, 5, 6, 7]
+									tr
+										td.first-cell
+											a(href="#", onclick="openModalImage(event, '/static/img/content/houseroom/houseroom.jpg')") План
+											span Студия
+										td 2/12
+										td 100/44/12
+										td II кв. 2018
+										td 45 000
+										td 2 000 000
+										td
+											a(href="#") Подать заявку
+
+				.col-lg-12
+					.housing-block
+						.housing-block-payment-type
+							.housing-block-title Способы оплаты
+							.housing-block-payment-tabs
+								a(href="#", onclick="openPayment(event, 'ipoteka')").housing-block-payment-type__tab#defaultOpen Ипотека от 7%
+								a(href="#", onclick="openPayment(event, 'cash')").housing-block-payment-type__tab Наличными со скидкой
+								a(href="#", onclick="openPayment(event, 'installment')").housing-block-payment-type__tab Рассрочка
+							.row
+								.housing-block-payment-type__body.tabcontent#ipoteka
+									.col-lg-7
+										p.housing-block-text Получите гарантированное одобрение ипотеки, обратившись к ипотечному брокеру. Специалист поможет подобрать максимально выгодную программу в банке с самой низкой процентной ставкой и небольшой суммой ежемесячного платежа.
+										br
+										p.housing-block-text Вы можете получить выгодную ипотеку без первого взноса. Так же действуют субсидии и возможность использовать материнского капитала в качестве первого взноса.
+										br
+										p.housing-block-text Сразу после получения положительного ответа от банка вы можете оформлять сделку по покупке квартиры в жилом комплексе «Эволюция».
+										br
+										p.housing-block-text Получите консультацию по телефону +7 (383) 207-53-84.
+									.col-lg-5
+										form.payment-type-form
+											h4.payment-type-form__title Подобрать лучшие условия по ипотеке
+											.payment-type-form__body
+												.form-group
+													label Ваше имя
+													input(type="text").form-control
+												.form-group
+													label Телефон
+													input(type="text").form-control
+												.form-group
+													input(type="submit", value="Подобрать").form-control
+								.housing-block-payment-type__body.tabcontent#cash
+									.col-lg-7
+										p.housing-block-text Получите гарантированное одобрение ипотеки, обратившись к ипотечному брокеру. Специалист поможет подобрать максимально выгодную программу в банке с самой низкой процентной ставкой и небольшой суммой ежемесячного платежа.
+										br
+										p.housing-block-text Вы можете получить выгодную ипотеку без первого взноса. Так же действуют субсидии и возможность использовать материнского капитала в качестве первого взноса.
+										br
+										p.housing-block-text Сразу после получения положительного ответа от банка вы можете оформлять сделку по покупке квартиры в жилом комплексе «Эволюция».
+										br
+										p.housing-block-text Получите консультацию по телефону +7 (383) 207-53-84.
+									.col-lg-5
+										form.payment-type-form
+											h4.payment-type-form__title Подобрать лучшие условия по ипотеке
+											.payment-type-form__body
+												.form-group
+													label Ваше имя
+													input(type="text").form-control
+												.form-group
+													label Телефон
+													input(type="text").form-control
+												.form-group
+													input(type="submit", value="Подобрать").form-control
+								.housing-block-payment-type__body.tabcontent#installment
+									.col-lg-7
+										p.housing-block-text Получите РАССРОЧКУ. Специалист поможет подобрать максимально выгодную программу в банке с самой низкой процентной ставкой и небольшой суммой ежемесячного платежа.
+										br
+										p.housing-block-text Вы можете получить выгодную ипотеку без первого взноса. Так же действуют субсидии и возможность использовать материнского капитала в качестве первого взноса.
+										br
+										p.housing-block-text Сразу после получения положительного ответа от банка вы можете оформлять сделку по покупке квартиры в жилом комплексе «Эволюция».
+										br
+										p.housing-block-text Получите консультацию по телефону +7 (383) 207-53-84.
+									.col-lg-5
+										form.payment-type-form
+											h4.payment-type-form__title Получить рассрочку
+											.payment-type-form__body
+												.form-group
+													label Ваше имя
+													input(type="text").form-control
+												.form-group
+													label Телефон
+													input(type="text").form-control
+												.form-group
+													input(type="submit", value="Подобрать").form-control
+				.col-lg-12
+					.housing-block
+						.housing-block-other-offer
+							.housing-block-title Не понравилась эта новостройка?
+							p.housing-block-text Вас не заинтересовал жилой комплекс ? Специально для вас собраны похожие новостройки. Жилые комплексы от строительной компании ГК «Стрижи», объекты со сдачей в этом же году или построенные в этом же районе. Это очень просто, попробуйте!
+							br
+							p.housing-block-text Давайте поищем другие новостройки по подобным критериям!
+							.housing-block-other-offer__filter
+								.axiom-cart-line
+									.axiom-cart-line__title По району:
+									a(href="#").axiom-cart-line__value Заельцовский
+								.axiom-cart-line
+									.axiom-cart-line__title По застройщику:
+									a(href="#").axiom-cart-line__value ГК «Стрижи»
+								.axiom-cart-line
+									.axiom-cart-line__title По цене:
+									a(href="#").axiom-cart-line__value от 45 000 р/кв.м.
+								.axiom-cart-line
+									.axiom-cart-line__title По дате сдачи дома:
+									a(href="#").axiom-cart-line__value 2017
+							.housing-block-title Вас точно должны заинтересовать эти новостройки
+							.row.other-housing
+								.col-lg-4.col-md-4.col-sm-6.col-xs-12
+									include ../../modules/cart-house
+								.col-lg-4.col-md-4.col-sm-6.col-xs-12
+									include ../../modules/cart-house
+								.col-lg-4.col-md-4.col-sm-6.col-xs-12
+									include ../../modules/cart-house
+				.col-lg-12
+					.housing-block(style="margin-bottom: 40px")
+						.housing-block-application
+							.housing-block-title Мы не отпутим вас без квартиры вашей мечты!
+							.housing-block-text Заполните форму ниже, и мы подберем идеальный для вас вариант. Обещаем.
+							.row
+								.col-lg-6
+									form.application-form
+										.form-group
+											label.title-input Ваше имя
+											input(type="text").form-control
+										.form-group
+											label.title-input Телефон
+											input(type="text").form-control
+										.form-group
+											label.title-input Количество комнат
+											br
+											.check
+												input(type="radio" id="stud" name="room")
+												label(for="stud") Студия
+												input(type="radio" id="one-room" name="room")
+												label(for="one-room") 1-к
+												input(type="radio" id="two-room" name="room")
+												label(for="two-room") 2-к
+												input(type="radio" id="three-room" name="room")
+												label(for="three-room") 3-к
+												input(type="radio" id="four-room" name="room")
+												label(for="four-room") 4-к
+										.form-group
+											label.title-input Максимальная стоимость квартиры (не обязательно)
+											input(type="text" placeholder="Например 1 000 000 руб.").form-control
+										.form-group
+											label.title-input Желаемая площадь квартиры (не обязательно)
+											input(type="text" placeholder="Например 1 000 000 руб.").form-control
+										.form-group
+											label.title-input Дата сдачи ЖК
+											br
+											.check
+												input(type="radio" id="done" name="date-deliver")
+												label(for="done") Уже сдан
+												input(type="radio" id="date-2017" name="date-deliver")
+												label(for="date-2017") 2017
+												input(type="radio" id="date-2018" name="date-deliver")
+												label(for="date-2018") 2018
+												input(type="radio" id="date-2019" name="date-deliver")
+												label(for="date-2018") 2019
+										.form-group
+											input(type="submit", value="Отправить заявку").application-submit
+								.col-lg-6
+									.housing-manual
+										.manual-line
+											.rect
+											p.housing-block-text Заполните простую форму подбора, укажите свои пожелания по стоимости, площади и району
+										.manual-line
+											.rect
+											p.housing-block-text Отправьте заявку на подбор и немного подождите, наши специалисты приступили к подбору
+										.manual-line
+											.rect
+											p.housing-block-text С вами свяжутся профессиональные специалисты по новостройкам. Вы сможете получить всю необходимую информацию за один звонок
+										.manual-line
+											.rect
+											p.housing-block-text Вы получите конкретные предложения, сможете посетить новостройки и пообщаться с представителями компании-
+										.manual-line
+											.rect
+											p.housing-block-text Услуга подбора квартиры от застройщика ГК «Стрижи» абсолютно бесплатны. Смело делайте заявку:)
+
+			.col-lg-3
+				include ../../modules/share
+				include ../../modules/share
+				include ../../modules/share
+				include ../../modules/share
+				include ../../modules/share
+				include ../../modules/share
+				include ../../modules/share
+				include ../../modules/share
+				include ../../modules/share
+				include ../../modules/share
+				include ../../modules/share
+				include ../../modules/share

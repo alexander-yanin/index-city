@@ -1,0 +1,9 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Акции'
+	- var pageClass = 'index-page'
+
+block content
+	include ../modules/filter
+	include shares/shares_content

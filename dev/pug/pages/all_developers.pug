@@ -1,0 +1,10 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Все застройщики'
+	- var pageClass = 'index-page'
+
+block content
+	include collections/banner
+	include ../modules/filter
+	include all_developers/all_developers_content

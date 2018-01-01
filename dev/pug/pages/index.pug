@@ -1,0 +1,12 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+block content
+	include index/banner
+	include ../modules/filter
+	include index/slider
+	include  index/section1
+	include index/slider

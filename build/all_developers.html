@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Все застройщики</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header id="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12"><span class="header-top__info">Звоните нам 24 часа в сутки</span><a class="header-top__info phone" href="tel:+7 (383) 263-03-38">+7 (383) 263-03-38</a></div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                <div class="header-top__social"><a href="#"><img src="/static/img/general/fb.svg"></a><a href="#"><img src="/static/img/general/insta.svg"></a><a href="#"><img src="/static/img/general/vk.svg"></a></div>
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 header-top__feedback"><a class="header-top__info underline" href="tel:+7 (383) 263-03-38">Заказать звонок от нашего специалиста</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-2 col-lg-2"><a href="/">
+                  <svg class="icon icon-logo ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+                  </svg></a></div>
+              <div class="col-md-10 col-lg-10">
+                <ul class="header-nav">
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Застройщики</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Все новостройки</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Ипотека</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <svg class="icon icon-menu ">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+              </svg>
+              <div class="mobile-nav">
+                <div class="mobile-nav-head"><a href="/">
+                    <svg class="icon icon-logo ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+                    </svg></a>
+                  <div class="span">+7 (383) 263-03-38</div>
+                  <svg class="icon icon-close ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                  </svg>
+                </div>
+                <div class="mobile-nav-body">
+                  <ul class="mobile-nav-list">
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Застройщики</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Все новостройки</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Ипотека</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Акции</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Контакты</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="tel:+7 (383) 263-03-38">
+                        <svg class="icon icon-phone-call ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#phone-call"></use>
+                        </svg><span style="margin-left: 5px;">Перезвоните мне</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="housing-banner"><img class="housing-banner-img" src="static/img/content/index/bg-1@2x.png">
+          <div class="container">
+            <div class="housing-banner-content">
+              <div class="row">
+                <p class="bread-crumbs"><a href="#">Главная</a><span>/</span><a href="#">Все застройщики</a><span>/</span><a href="#">ЗАО Строитель</a></p><span class="housing-banner-content__title">ЖК Аксиома</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-wrapper filter-fluid">
+          <div class="container">
+            <div class="filter">
+              <div class="row center">
+                <!--.col-md-2.col-lg-2.col-sm-6-->
+                <div class="form-group filter-item">
+                  <label class="filter-title">Город</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Застройщик</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Жилой комплекс</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Метро</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Цена за кв.м.</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>от 30 000 руб.</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Материал стен</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Любой</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Год сдачи</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Любой</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Квартал сдачи</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Любой</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item check">
+                  <input type="checkbox" id="beside-metro">
+                  <label for="beside-metro">Рядом с метро</label>
+                </div>
+                <div class="form-group filter-item">
+                  <button class="search-button">Найти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="housing-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="houserooms-header">
+                    <h4>Все сданные новостройки Новосибирска</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"><a class="houseroom" href="#"><img class="houseroom-img" src="static/img/content/houseroom/houseroom.jpg">
+                        <h3 class="houseroom-title">ЖК Пифагор</h3>
+                        <div class="houseroom-description"><span class="houseroom-description__item">Сдано 5 жилых комплексов</span><span class="houseroom-description__item">10 лет работы на рынке</span>
+                          <div class="houseroom-description__button">Подробнее</div>
+                        </div></a></div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"><a class="houseroom" href="#"><img class="houseroom-img" src="static/img/content/houseroom/houseroom.jpg">
+                        <h3 class="houseroom-title">ЖК Пифагор</h3>
+                        <div class="houseroom-description"><span class="houseroom-description__item">Сдано 5 жилых комплексов</span><span class="houseroom-description__item">10 лет работы на рынке</span>
+                          <div class="houseroom-description__button">Подробнее</div>
+                        </div></a></div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"><a class="houseroom" href="#"><img class="houseroom-img" src="static/img/content/houseroom/houseroom.jpg">
+                        <h3 class="houseroom-title">ЖК Пифагор</h3>
+                        <div class="houseroom-description"><span class="houseroom-description__item">Сдано 5 жилых комплексов</span><span class="houseroom-description__item">10 лет работы на рынке</span>
+                          <div class="houseroom-description__button">Подробнее</div>
+                        </div></a></div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"><a class="houseroom" href="#"><img class="houseroom-img" src="static/img/content/houseroom/houseroom.jpg">
+                        <h3 class="houseroom-title">ЖК Пифагор</h3>
+                        <div class="houseroom-description"><span class="houseroom-description__item">Сдано 5 жилых комплексов</span><span class="houseroom-description__item">10 лет работы на рынке</span>
+                          <div class="houseroom-description__button">Подробнее</div>
+                        </div></a></div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"><a class="houseroom" href="#"><img class="houseroom-img" src="static/img/content/houseroom/houseroom.jpg">
+                        <h3 class="houseroom-title">ЖК Пифагор</h3>
+                        <div class="houseroom-description"><span class="houseroom-description__item">Сдано 5 жилых комплексов</span><span class="houseroom-description__item">10 лет работы на рынке</span>
+                          <div class="houseroom-description__button">Подробнее</div>
+                        </div></a></div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"><a class="houseroom" href="#"><img class="houseroom-img" src="static/img/content/houseroom/houseroom.jpg">
+                        <h3 class="houseroom-title">ЖК Пифагор</h3>
+                        <div class="houseroom-description"><span class="houseroom-description__item">Сдано 5 жилых комплексов</span><span class="houseroom-description__item">10 лет работы на рынке</span>
+                          <div class="houseroom-description__button">Подробнее</div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12"><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                    <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a></div>
+                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12"><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                    <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a></div>
+                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12"><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                    <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a></div>
+                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12"><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                    <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-2 col-lg-2">
+                <svg class="icon icon-logo ">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+                </svg>
+              </div>
+              <div class="col-md-10 col-lg-10">
+                <ul class="footer-nav">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Застройщики</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Все новостройки</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Ипотека</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-top">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12"><span class="footer-top__info">Звоните нам 24 часа в сутки</span><a class="footer-top__info phone" href="tel:+7 (383) 263-03-38">+7 (383) 263-03-38</a></div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                <div class="footer-top__social"><a href="#"><img src="/static/img/general/fb.svg"></a><a href="#"><img src="/static/img/general/insta.svg"></a><a href="#"><img src="/static/img/general/vk.svg"></a></div>
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 footer-top__feedback"><a class="footer-top__info underline" href="tel:+7 (383) 263-03-38">Заказать звонок от нашего специалиста</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Застройщик'
+	- var pageClass = 'index-page'
+
+block content
+	include housing_card/banner
+	include ../modules/filter
+	include developer/developer_content

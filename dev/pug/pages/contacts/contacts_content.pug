@@ -1,0 +1,43 @@
+.contacts-wrapper
+	.container
+		.row
+			.col-lg-12
+				p.bread-crumbs.bread-crumbs-content
+					a(href="#") Главная
+					span /
+					a(href="#") Контакты
+		.row
+			.col-md-4
+				.contacts-view
+					.contacts-view-title Контакты
+					.contacts-view-content
+						.contacts-view-item
+							span.title Адес:
+							span.value Ядринцевская 50
+						.contacts-view-item
+							span.title Телефон:
+							span.value +7 (383) 263-03-38
+						.contacts-view-item
+							span.title Часы работы:
+							span.value Круглосуточно
+						.contacts-view-item
+							span.title E-mail:
+							span.value indexcity@mail.ru
+				.contacts-form-container
+					.contacts-form-title Задайте нам любой вопрос и получите ответ в ближайшие 5 минут.
+					form
+						.contacts-form-group
+							label Ваше имя
+							input(type="text")
+						.contacts-form-group
+							label Телефон
+							input(type="text")
+						.contacts-form-group
+							label Телефон
+							textarea
+						.contacts-form-group
+							input(type="submit", value="Отправить")
+			.col-md-8
+				.contacts-block-map
+					.contacts-block-title Карта
+					.contacts-map(id="contacts-map")

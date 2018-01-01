@@ -1,0 +1,111 @@
+.contacts-wrapper
+  margin-bottom 50px
+
+.contacts-view
+  min-height 280px
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.31);
+  margin-bottom 18px
+  .contacts-view-title
+    height: 50px;
+    border-radius: 2px;
+    background-color: #33beca;
+    font-family: SourceSansPro;
+    font-size: rem(28px);
+    color: #ffffff;
+    padding: 0 20px
+    line-height 50px
+
+  .contacts-view-content
+    padding 16px 20px
+    background-color #fff
+    .contacts-view-item
+      display flex
+      flex-direction column
+      margin-bottom 12px
+      .title
+        font-family: FiraSansLight;
+        font-size: rem(14px);
+        color: #323232;
+      .value
+        font-family: FiraSansRegular;
+        font-size: rem(16px);
+        line-height: 1.19;
+        text-align: left;
+        color: rgba(50, 50, 50, 0.87);
+
+.contacts-form-container
+  min-height: 370px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.31);
+  padding 16px 20px
+
+  .contacts-form-title
+    font-family: SourceSansPro;
+    margin-bottom 15px
+    font-size: rem(16px);
+    line-height: 1.25;
+    text-align: left;
+    color: #2f223a;
+
+  .contacts-form-group
+    display flex
+    flex-direction column
+    margin-bottom 10px
+    label
+      font-family: FiraSansLight;
+      font-size: rem(14px);
+      text-align: left;
+      color: rgba(120, 120, 120, 0.87);
+    input[type="text"]
+      height: 40px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      border: solid 1px rgba(120, 120, 120, 0.5);
+    textarea
+      height: 70px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      border: solid 1px rgba(120, 120, 120, 0.5);
+    input[type="submit"]
+      height: 40px;
+      border-radius: 5px;
+      background-color: #007580;
+      border: solid 1px rgba(120, 120, 120, 0.5);
+      font-family: SourceSansPro;
+      font-size: rem(16px);
+      color: #ffffff;
+
+.contacts-block-map
+  width 100%
+  min-height: 696px;
+  border-radius: 2px;
+  padding 15px 18px
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.31);
+  border: solid 1px rgba(0, 0, 0, 0.05);
+
+.contacts-block-title
+  position relative
+  display inline
+  font-family SourceSansPro
+  font-size 24px
+  margin-bottom 8px
+  text-align left
+  color #323232
+  &:after
+    content ''
+    position absolute
+    top 50%
+    margin-left 12px
+    transform translateY(-50%)
+    size(202px, 2px)
+    opacity 0.5
+    border solid 1px #787878
+
+.contacts-map
+  margin-top 15px
+  width 100%
+  height 583px

@@ -1,0 +1,12 @@
+.banner
+	img(src="static/img/content/index/bg-1@2x.png").banner-img
+	.container
+		.banner-content
+			.row
+				span.banner-content__title Все новостройки Новосибирска
+			.row.service-list
+				each object in indexBanner
+					.col-md-3.col-lg-3.col-sm-6.col-xs-12
+						+icon(object.icon)
+						h4.service-title= object.title
+						span.service-description= object.description

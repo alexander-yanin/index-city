@@ -1,0 +1,116 @@
+.mortgage-content-wrapper
+	.container
+		.row
+			.col-lg-12
+				p.bread-crumbs.bread-crumbs-content
+					a(href="#") Главная
+					span /
+					a(href="#") Ипотека
+		.row
+			.col-md-3
+				.mortgage-tabs
+					.mortgage-tabs-title Ипотека
+					.mortgage-tabs-container
+						a(href="#", onclick="mortgageTabs(event, 'bank_info')").mortgage-tab#mortgage_default_tab Информация о банках
+						a(href="#", onclick="mortgageTabs(event, 'mortgage_calculate')").mortgage-tab Ипотечный калькулятор
+						a(href="#", onclick="mortgageTabs(event, 'mortgage_info')").mortgage-tab Онлайн подбор ипотеки
+						a(href="#").mortgage-tab Информация по ипотеке
+
+				include ../../modules/share
+				include ../../modules/share
+			.col-md-9
+				#bank_info.tabcontent
+					.row
+						.col-md-12
+							.mortgage-help-information
+								.mortgage-help-information-title Полезная информация по ипотеке
+								.mortgage-help-information-text Мы хотим чтобы наши клиенты всегда были в курсе всех новостей в сфере недвижимости. Мы хотим чтобы наши клиенты всегда были в курсе всех новостей в сфере недвижимости. Мы хотим чтобы наши клиенты всегда были в курсе всех новостей в сфере недвижимости. Мы хотим чтобы наши клиенты всегда были в курсе всех новостей в сфере недвижимости. Мы хотим чтобы наши клиенты всегда были в курсе всех новостей в сфере недвижимости.
+					.row
+						.col-md-12
+							.mortgage-list.help-information
+								.mortgage-item
+									img(src="").mortgage-item__img
+									.mortgage-item-content
+										.mortgage-item__title
+											span.name Беспроцентная рассрочка
+										.mortgage-item__text They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard…
+										a(href="#").mortgage-help-information-item__link Читать полностью
+								.mortgage-item
+									img(src="").mortgage-item__img
+									.mortgage-item-content
+										.mortgage-item__title
+											span.name Беспроцентная рассрочка
+										.mortgage-item__text They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard…
+										a(href="#").mortgage-help-information-item__link Читать полностью
+				#mortgage_calculate.tabcontent
+					.row
+						.col-md-8
+							.mortgage-calculate
+								span.mortgage-calculate-title Ипотечный калькулятор
+								.mortgage-input-group
+									label Хочу
+									select
+										option(value=1) Купить квартиру в новостройке
+										option(value=2) Купить квартиру не в новостройке
+								.mortgage-input-group
+									label Которая стоит
+									.input-range
+										input(type="text", value="3000000 ₽", oninput="changeInput(event, 'price-house-range', '₽')").price-house-input
+										input(type="range", min=300000, max=10000000, value=3000000, oninput="changeInput(event, 'price-house-input', '₽')").price-house-range
+								.mortgage-input-group
+									label У меня есть
+									.input-range
+										input(type="text", value="1000000 ₽" oninput="changeInput(event, 'ihave-range', '₽')").ihave-input
+										input(type="range", min=450000, max=3000000, value=1000000, oninput="changeInput(event, 'ihave-input', '₽')").ihave-range
+								.mortgage-input-group
+									label Кредит на срок
+									.input-range
+										input(type="text", value="5 лет" oninput="changeInput(event, 'age-range', 'лет')").age-input
+										input(type="range", min=1, max=30, value=5, oninput="changeInput(event, 'age-input', 'лет')").age-range
+						.col-md-4
+							.mortgage-calculate-result
+								.mortgage-result-group
+									span.title Сумма кредита
+									span.value 2 000 000 ₽
+								.mortgage-result-group
+									span.title Ежемесячный платёж
+									span.value 30 578 ₽
+								.mortgage-result-group
+									span.title Процентная ставка
+									span.value 7,4 %
+								.mortgage-form
+									.mortgage-form-title Подать заявку на ипотеку
+									.mortgage-form-group
+										label Ваше имя
+										input(type="text")
+									.mortgage-form-group
+										label Телефон
+										input(type="text")
+									.mortgage-form-group
+										input(type="submit" value="Подать заявку")
+				#mortgage_info.tabcontent
+					.row
+						.col-md-12
+							.mortgage-information
+								.mortgage-information-header
+									h3 Информация по ипотеке
+									a(href="#", onclick="mortgageTabs(event, 'mortgage_calculate')").mortgage-tab Ипотечный калькулятор
+								.mortgage-list
+									.mortgage-item
+										img(src="").mortgage-item__img
+										.mortgage-item-content
+											.mortgage-item__title
+												span.name Беспроцентная рассрочка
+												span.rate Ставка: от 10%
+											.mortgage-item__text They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard…
+												a(href="#") Читать полностью
+											a(href="#").mortgage-item__link Записаться к брокеру
+									.mortgage-item
+										img(src="").mortgage-item__img
+										.mortgage-item-content
+											.mortgage-item__title
+												span.name Беспроцентная рассрочка
+												span.rate Ставка: от 10%
+											.mortgage-item__text They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard…
+												a(href="#") Читать полностью
+											a(href="#").mortgage-item__link Записаться к брокеру

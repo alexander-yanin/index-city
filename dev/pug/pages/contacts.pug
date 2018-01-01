@@ -1,0 +1,9 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Контакты'
+	- var pageClass = 'index-page'
+
+block content
+	include ../modules/filter
+	include contacts/contacts_content

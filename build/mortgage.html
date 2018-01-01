@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Ипотека</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header id="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12"><span class="header-top__info">Звоните нам 24 часа в сутки</span><a class="header-top__info phone" href="tel:+7 (383) 263-03-38">+7 (383) 263-03-38</a></div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                <div class="header-top__social"><a href="#"><img src="/static/img/general/fb.svg"></a><a href="#"><img src="/static/img/general/insta.svg"></a><a href="#"><img src="/static/img/general/vk.svg"></a></div>
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 header-top__feedback"><a class="header-top__info underline" href="tel:+7 (383) 263-03-38">Заказать звонок от нашего специалиста</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-2 col-lg-2"><a href="/">
+                  <svg class="icon icon-logo ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+                  </svg></a></div>
+              <div class="col-md-10 col-lg-10">
+                <ul class="header-nav">
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Застройщики</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Все новостройки</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Ипотека</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <svg class="icon icon-menu ">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+              </svg>
+              <div class="mobile-nav">
+                <div class="mobile-nav-head"><a href="/">
+                    <svg class="icon icon-logo ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+                    </svg></a>
+                  <div class="span">+7 (383) 263-03-38</div>
+                  <svg class="icon icon-close ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                  </svg>
+                </div>
+                <div class="mobile-nav-body">
+                  <ul class="mobile-nav-list">
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Застройщики</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Все новостройки</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Ипотека</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Акции</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Контакты</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="tel:+7 (383) 263-03-38">
+                        <svg class="icon icon-phone-call ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#phone-call"></use>
+                        </svg><span style="margin-left: 5px;">Перезвоните мне</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="filter-wrapper filter-fluid">
+          <div class="container">
+            <div class="filter">
+              <div class="row center">
+                <!--.col-md-2.col-lg-2.col-sm-6-->
+                <div class="form-group filter-item">
+                  <label class="filter-title">Город</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Застройщик</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Жилой комплекс</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Метро</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Цена за кв.м.</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>от 30 000 руб.</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Материал стен</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Любой</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Год сдачи</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Любой</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Квартал сдачи</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Любой</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item check">
+                  <input type="checkbox" id="beside-metro">
+                  <label for="beside-metro">Рядом с метро</label>
+                </div>
+                <div class="form-group filter-item">
+                  <button class="search-button">Найти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mortgage-content-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="bread-crumbs bread-crumbs-content"><a href="#">Главная</a><span>/</span><a href="#">Ипотека</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mortgage-tabs">
+                  <div class="mortgage-tabs-title">Ипотека</div>
+                  <div class="mortgage-tabs-container"><a class="mortgage-tab" href="#" onclick="mortgageTabs(event, 'bank_info')" id="mortgage_default_tab">Информация о банках</a><a class="mortgage-tab" href="#" onclick="mortgageTabs(event, 'mortgage_calculate')">Ипотечный калькулятор</a><a class="mortgage-tab" href="#" onclick="mortgageTabs(event, 'mortgage_info')">Онлайн подбор ипотеки</a><a class="mortgage-tab" href="#">Информация по ипотеке</a></div>
+                </div><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a>
+              </div>
+              <div class="col-md-9">
+                <div class="tabcontent" id="bank_info">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="mortgage-help-information">
+                        <div class="mortgage-help-information-title">Полезная информация по ипотеке</div>
+                        <div class="mortgage-help-information-text">Мы хотим чтобы наши клиенты всегда были в курсе всех новостей в сфере недвижимости. Мы хотим чтобы наши клиенты всегда были в курсе всех новостей в сфере недвижимости. Мы хотим чтобы наши клиенты всегда были в курсе всех новостей в сфере недвижимости. Мы хотим чтобы наши клиенты всегда были в курсе всех новостей в сфере недвижимости. Мы хотим чтобы наши клиенты всегда были в курсе всех новостей в сфере недвижимости.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="mortgage-list help-information">
+                        <div class="mortgage-item"><img class="mortgage-item__img" src="">
+                          <div class="mortgage-item-content">
+                            <div class="mortgage-item__title"><span class="name">Беспроцентная рассрочка</span></div>
+                            <div class="mortgage-item__text">They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard…</div><a class="mortgage-help-information-item__link" href="#">Читать полностью</a>
+                          </div>
+                        </div>
+                        <div class="mortgage-item"><img class="mortgage-item__img" src="">
+                          <div class="mortgage-item-content">
+                            <div class="mortgage-item__title"><span class="name">Беспроцентная рассрочка</span></div>
+                            <div class="mortgage-item__text">They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard…</div><a class="mortgage-help-information-item__link" href="#">Читать полностью</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabcontent" id="mortgage_calculate">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="mortgage-calculate"><span class="mortgage-calculate-title">Ипотечный калькулятор</span>
+                        <div class="mortgage-input-group">
+                          <label>Хочу</label>
+                          <select>
+                            <option value="1">Купить квартиру в новостройке</option>
+                            <option value="2">Купить квартиру не в новостройке</option>
+                          </select>
+                        </div>
+                        <div class="mortgage-input-group">
+                          <label>Которая стоит</label>
+                          <div class="input-range">
+                            <input class="price-house-input" type="text" value="3000000 ₽" oninput="changeInput(event, 'price-house-range', '₽')">
+                            <input class="price-house-range" type="range" min="300000" max="10000000" value="3000000" oninput="changeInput(event, 'price-house-input', '₽')">
+                          </div>
+                        </div>
+                        <div class="mortgage-input-group">
+                          <label>У меня есть</label>
+                          <div class="input-range">
+                            <input class="ihave-input" type="text" value="1000000 ₽" oninput="changeInput(event, 'ihave-range', '₽')">
+                            <input class="ihave-range" type="range" min="450000" max="3000000" value="1000000" oninput="changeInput(event, 'ihave-input', '₽')">
+                          </div>
+                        </div>
+                        <div class="mortgage-input-group">
+                          <label>Кредит на срок</label>
+                          <div class="input-range">
+                            <input class="age-input" type="text" value="5 лет" oninput="changeInput(event, 'age-range', 'лет')">
+                            <input class="age-range" type="range" min="1" max="30" value="5" oninput="changeInput(event, 'age-input', 'лет')">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="mortgage-calculate-result">
+                        <div class="mortgage-result-group"><span class="title">Сумма кредита</span><span class="value">2 000 000 ₽</span></div>
+                        <div class="mortgage-result-group"><span class="title">Ежемесячный платёж</span><span class="value">30 578 ₽</span></div>
+                        <div class="mortgage-result-group"><span class="title">Процентная ставка</span><span class="value">7,4 %</span></div>
+                        <div class="mortgage-form">
+                          <div class="mortgage-form-title">Подать заявку на ипотеку</div>
+                          <div class="mortgage-form-group">
+                            <label>Ваше имя</label>
+                            <input type="text">
+                          </div>
+                          <div class="mortgage-form-group">
+                            <label>Телефон</label>
+                            <input type="text">
+                          </div>
+                          <div class="mortgage-form-group">
+                            <input type="submit" value="Подать заявку">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabcontent" id="mortgage_info">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="mortgage-information">
+                        <div class="mortgage-information-header">
+                          <h3>Информация по ипотеке</h3><a class="mortgage-tab" href="#" onclick="mortgageTabs(event, 'mortgage_calculate')">Ипотечный калькулятор</a>
+                        </div>
+                        <div class="mortgage-list">
+                          <div class="mortgage-item"><img class="mortgage-item__img" src="">
+                            <div class="mortgage-item-content">
+                              <div class="mortgage-item__title"><span class="name">Беспроцентная рассрочка</span><span class="rate">Ставка: от 10%</span></div>
+                              <div class="mortgage-item__text">They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard…<a href="#">Читать полностью</a></div><a class="mortgage-item__link" href="#">Записаться к брокеру</a>
+                            </div>
+                          </div>
+                          <div class="mortgage-item"><img class="mortgage-item__img" src="">
+                            <div class="mortgage-item-content">
+                              <div class="mortgage-item__title"><span class="name">Беспроцентная рассрочка</span><span class="rate">Ставка: от 10%</span></div>
+                              <div class="mortgage-item__text">They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard…<a href="#">Читать полностью</a></div><a class="mortgage-item__link" href="#">Записаться к брокеру</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-2 col-lg-2">
+                <svg class="icon icon-logo ">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+                </svg>
+              </div>
+              <div class="col-md-10 col-lg-10">
+                <ul class="footer-nav">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Застройщики</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Все новостройки</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Ипотека</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-top">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12"><span class="footer-top__info">Звоните нам 24 часа в сутки</span><a class="footer-top__info phone" href="tel:+7 (383) 263-03-38">+7 (383) 263-03-38</a></div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                <div class="footer-top__social"><a href="#"><img src="/static/img/general/fb.svg"></a><a href="#"><img src="/static/img/general/insta.svg"></a><a href="#"><img src="/static/img/general/vk.svg"></a></div>
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 footer-top__feedback"><a class="footer-top__info underline" href="tel:+7 (383) 263-03-38">Заказать звонок от нашего специалиста</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  </body>
+</html>

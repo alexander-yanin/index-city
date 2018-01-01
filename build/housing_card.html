@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Карточка ЖК</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header id="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12"><span class="header-top__info">Звоните нам 24 часа в сутки</span><a class="header-top__info phone" href="tel:+7 (383) 263-03-38">+7 (383) 263-03-38</a></div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                <div class="header-top__social"><a href="#"><img src="/static/img/general/fb.svg"></a><a href="#"><img src="/static/img/general/insta.svg"></a><a href="#"><img src="/static/img/general/vk.svg"></a></div>
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 header-top__feedback"><a class="header-top__info underline" href="tel:+7 (383) 263-03-38">Заказать звонок от нашего специалиста</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-2 col-lg-2"><a href="/">
+                  <svg class="icon icon-logo ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+                  </svg></a></div>
+              <div class="col-md-10 col-lg-10">
+                <ul class="header-nav">
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Застройщики</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Все новостройки</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Ипотека</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <svg class="icon icon-menu ">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+              </svg>
+              <div class="mobile-nav">
+                <div class="mobile-nav-head"><a href="/">
+                    <svg class="icon icon-logo ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+                    </svg></a>
+                  <div class="span">+7 (383) 263-03-38</div>
+                  <svg class="icon icon-close ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                  </svg>
+                </div>
+                <div class="mobile-nav-body">
+                  <ul class="mobile-nav-list">
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Застройщики</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Все новостройки</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Ипотека</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Акции</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="#">Контакты</a></li>
+                    <li class="mobile-nav-list__item"><a class="mobile-nav-list__item__link" href="tel:+7 (383) 263-03-38">
+                        <svg class="icon icon-phone-call ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#phone-call"></use>
+                        </svg><span style="margin-left: 5px;">Перезвоните мне</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="housing-banner"><img class="housing-banner-img" src="static/img/content/index/bg-1@2x.png">
+          <div class="container">
+            <div class="housing-banner-content">
+              <div class="row">
+                <p class="bread-crumbs"><a href="#">Главная</a><span>/</span><a href="#">Все застройщики</a><span>/</span><a href="#">ЖК Аксиома</a></p><span class="housing-banner-content__title">ЖК Аксиома</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-wrapper filter-fluid">
+          <div class="container">
+            <div class="filter">
+              <div class="row center">
+                <!--.col-md-2.col-lg-2.col-sm-6-->
+                <div class="form-group filter-item">
+                  <label class="filter-title">Город</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Застройщик</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Жилой комплекс</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Метро</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Новосибирск</option>
+                    <option>Омск</option>
+                    <option>Бердск</option>
+                    <option>Бийск</option>
+                    <option>Москва</option>
+                    <option>Питер</option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Цена за кв.м.</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>от 30 000 руб.</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Материал стен</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Любой</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Год сдачи</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Любой</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item">
+                  <label class="filter-title">Квартал сдачи</label>
+                  <select class="form-control filter-select" multiple="multiple">
+                    <option>Любой</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group filter-item check">
+                  <input type="checkbox" id="beside-metro">
+                  <label for="beside-metro">Рядом с метро</label>
+                </div>
+                <div class="form-group filter-item">
+                  <button class="search-button">Найти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="housing-content">
+          <div class="modal-view-image" onclick="closeModalImage()"><img class="modal-image"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <div class="col-lg-5 col-axiom">
+                  <div class="axiom-cart">
+                    <div class="axiom-cart-title">ЖК Аксиома</div>
+                    <div class="axiom-cart-content">
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Застройщик:</span><span class="axiom-cart-line__value">ЗАО Строитель</span></p>
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Адрес:</span><span class="axiom-cart-line__value">пр. Карла Маркса 1</span></p>
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Срок сдачи:</span><span class="axiom-cart-line__value">II кв. 2018</span></p>
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Район:</span><span class="axiom-cart-line__value">Центральный</span></p>
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Тип отделки:</span><span class="axiom-cart-line__value">Чистовая</span></p>
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Материалы стен:</span><span class="axiom-cart-line__value">Кирпич</span></p>
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Цена за кв.м.:</span><span class="axiom-cart-line__value">от 45 000 руб.</span></p>
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Цена за квартиру:</span><span class="axiom-cart-line__value">от 2 000 000 руб.</span></p>
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Площадь квартир:</span><span class="axiom-cart-line__value">от 40 кв.м.</span></p>
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Метро:</span><span class="axiom-cart-line__value">Площадь Ленина</span></p>
+                    </div>
+                    <div class="axiom-cart-footer">
+                      <p class="axiom-cart-line"><span class="axiom-cart-line__title">Типы оплаты:</span><span class="axiom-cart-line__value">Наличные  |  Ипотека  |  Мат.капитал</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="housing-gallery" id="gallery-slider">
+                    <div class="housing-gallery-main"><img src="/static/img/content/houseroom/houseroom.jpg"><a class="arrow-prev" href="#">
+                        <svg class="icon icon-back ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#back"></use>
+                        </svg></a><a class="arrow-next" href="#">
+                        <svg class="icon icon-next ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#next"></use>
+                        </svg></a></div>
+                    <div class="housing-gallery-slides"><img class="housing-gallery-slide active" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello0.jpg" num-slide-img="0"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello1.jpg" num-slide-img="1"><img class="housing-gallery-slide" src="/static/img/content/index/slide-bg.jpg" data-basic="hello2.jpg" num-slide-img="2"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello3.jpg" num-slide-img="3"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello4.jpg" num-slide-img="4"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello5.jpg" num-slide-img="5"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello6.jpg" num-slide-img="6"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello7.jpg" num-slide-img="7"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello8.jpg" num-slide-img="8"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello9.jpg" num-slide-img="9"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello10.jpg" num-slide-img="10"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello11.jpg" num-slide-img="11"></div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="housing-block">
+                    <div class="housing-block-description">
+                      <div class="housing-block-title">Описание</div>
+                      <p class="housing-block-text">Высотный и стильный жилой комплекс «Аксиома» от известного застройщика ЗАО «Строитель» возводится в самом сердце Левого берега Новосибирска. Будущим жильцам ЖК «Аксиома» будет доступна вся развитая инфраструктура этого района. Рядом несколько крупных торговых центров, множество магазинов и кафе. Здесь проходят крупные автомагистрали, в пешей доступности станция метро. Застройщик славно потрудился над проектом благоустройства. Во дворе дома появится многоуровневая площадка с детскими площадками, цветником, зоной отдыха и спортивными объектами.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="housing-block">
+                    <div class="housing-block-map">
+                      <div class="housing-block-title">Карта</div>
+                      <div class="housing-map" id="map"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="housing-block">
+                    <div class="housing-block-plan_and_price">
+                      <div class="housing-block-title">Планировки и цены<a class="housing-block-plan_and_price__link" href="#">Подать заявку на подбор</a></div>
+                      <table>
+                        <tr>
+                          <th>Планировка</th>
+                          <th>Этаж</th>
+                          <th>Площадь (кв.м)</th>
+                          <th>Срок сдачи</th>
+                          <th>Цена за кв.м. от</th>
+                          <th>Цена квартиры от (руб.)</th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td class="first-cell"><a href="#" onclick="openModalImage(event, '/static/img/content/houseroom/houseroom.jpg')">План</a><span>Студия</span></td>
+                          <td>2/12</td>
+                          <td>100/44/12</td>
+                          <td>II кв. 2018</td>
+                          <td>45 000</td>
+                          <td>2 000 000</td>
+                          <td><a href="#">Подать заявку</a></td>
+                        </tr>
+                        <tr>
+                          <td class="first-cell"><a href="#" onclick="openModalImage(event, '/static/img/content/houseroom/houseroom.jpg')">План</a><span>Студия</span></td>
+                          <td>2/12</td>
+                          <td>100/44/12</td>
+                          <td>II кв. 2018</td>
+                          <td>45 000</td>
+                          <td>2 000 000</td>
+                          <td><a href="#">Подать заявку</a></td>
+                        </tr>
+                        <tr>
+                          <td class="first-cell"><a href="#" onclick="openModalImage(event, '/static/img/content/houseroom/houseroom.jpg')">План</a><span>Студия</span></td>
+                          <td>2/12</td>
+                          <td>100/44/12</td>
+                          <td>II кв. 2018</td>
+                          <td>45 000</td>
+                          <td>2 000 000</td>
+                          <td><a href="#">Подать заявку</a></td>
+                        </tr>
+                        <tr>
+                          <td class="first-cell"><a href="#" onclick="openModalImage(event, '/static/img/content/houseroom/houseroom.jpg')">План</a><span>Студия</span></td>
+                          <td>2/12</td>
+                          <td>100/44/12</td>
+                          <td>II кв. 2018</td>
+                          <td>45 000</td>
+                          <td>2 000 000</td>
+                          <td><a href="#">Подать заявку</a></td>
+                        </tr>
+                        <tr>
+                          <td class="first-cell"><a href="#" onclick="openModalImage(event, '/static/img/content/houseroom/houseroom.jpg')">План</a><span>Студия</span></td>
+                          <td>2/12</td>
+                          <td>100/44/12</td>
+                          <td>II кв. 2018</td>
+                          <td>45 000</td>
+                          <td>2 000 000</td>
+                          <td><a href="#">Подать заявку</a></td>
+                        </tr>
+                        <tr>
+                          <td class="first-cell"><a href="#" onclick="openModalImage(event, '/static/img/content/houseroom/houseroom.jpg')">План</a><span>Студия</span></td>
+                          <td>2/12</td>
+                          <td>100/44/12</td>
+                          <td>II кв. 2018</td>
+                          <td>45 000</td>
+                          <td>2 000 000</td>
+                          <td><a href="#">Подать заявку</a></td>
+                        </tr>
+                        <tr>
+                          <td class="first-cell"><a href="#" onclick="openModalImage(event, '/static/img/content/houseroom/houseroom.jpg')">План</a><span>Студия</span></td>
+                          <td>2/12</td>
+                          <td>100/44/12</td>
+                          <td>II кв. 2018</td>
+                          <td>45 000</td>
+                          <td>2 000 000</td>
+                          <td><a href="#">Подать заявку</a></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="housing-block">
+                    <div class="housing-block-payment-type">
+                      <div class="housing-block-title">Способы оплаты</div>
+                      <div class="housing-block-payment-tabs"><a class="housing-block-payment-type__tab" href="#" onclick="openPayment(event, 'ipoteka')" id="defaultOpen">Ипотека от 7%</a><a class="housing-block-payment-type__tab" href="#" onclick="openPayment(event, 'cash')">Наличными со скидкой</a><a class="housing-block-payment-type__tab" href="#" onclick="openPayment(event, 'installment')">Рассрочка</a></div>
+                      <div class="row">
+                        <div class="housing-block-payment-type__body tabcontent" id="ipoteka">
+                          <div class="col-lg-7">
+                            <p class="housing-block-text">Получите гарантированное одобрение ипотеки, обратившись к ипотечному брокеру. Специалист поможет подобрать максимально выгодную программу в банке с самой низкой процентной ставкой и небольшой суммой ежемесячного платежа.</p><br>
+                            <p class="housing-block-text">Вы можете получить выгодную ипотеку без первого взноса. Так же действуют субсидии и возможность использовать материнского капитала в качестве первого взноса.</p><br>
+                            <p class="housing-block-text">Сразу после получения положительного ответа от банка вы можете оформлять сделку по покупке квартиры в жилом комплексе «Эволюция».</p><br>
+                            <p class="housing-block-text">Получите консультацию по телефону +7 (383) 207-53-84.</p>
+                          </div>
+                          <div class="col-lg-5">
+                            <form class="payment-type-form">
+                              <h4 class="payment-type-form__title">Подобрать лучшие условия по ипотеке</h4>
+                              <div class="payment-type-form__body">
+                                <div class="form-group">
+                                  <label>Ваше имя</label>
+                                  <input class="form-control" type="text">
+                                </div>
+                                <div class="form-group">
+                                  <label>Телефон</label>
+                                  <input class="form-control" type="text">
+                                </div>
+                                <div class="form-group">
+                                  <input class="form-control" type="submit" value="Подобрать">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="housing-block-payment-type__body tabcontent" id="cash">
+                          <div class="col-lg-7">
+                            <p class="housing-block-text">Получите гарантированное одобрение ипотеки, обратившись к ипотечному брокеру. Специалист поможет подобрать максимально выгодную программу в банке с самой низкой процентной ставкой и небольшой суммой ежемесячного платежа.</p><br>
+                            <p class="housing-block-text">Вы можете получить выгодную ипотеку без первого взноса. Так же действуют субсидии и возможность использовать материнского капитала в качестве первого взноса.</p><br>
+                            <p class="housing-block-text">Сразу после получения положительного ответа от банка вы можете оформлять сделку по покупке квартиры в жилом комплексе «Эволюция».</p><br>
+                            <p class="housing-block-text">Получите консультацию по телефону +7 (383) 207-53-84.</p>
+                          </div>
+                          <div class="col-lg-5">
+                            <form class="payment-type-form">
+                              <h4 class="payment-type-form__title">Подобрать лучшие условия по ипотеке</h4>
+                              <div class="payment-type-form__body">
+                                <div class="form-group">
+                                  <label>Ваше имя</label>
+                                  <input class="form-control" type="text">
+                                </div>
+                                <div class="form-group">
+                                  <label>Телефон</label>
+                                  <input class="form-control" type="text">
+                                </div>
+                                <div class="form-group">
+                                  <input class="form-control" type="submit" value="Подобрать">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="housing-block-payment-type__body tabcontent" id="installment">
+                          <div class="col-lg-7">
+                            <p class="housing-block-text">Получите РАССРОЧКУ. Специалист поможет подобрать максимально выгодную программу в банке с самой низкой процентной ставкой и небольшой суммой ежемесячного платежа.</p><br>
+                            <p class="housing-block-text">Вы можете получить выгодную ипотеку без первого взноса. Так же действуют субсидии и возможность использовать материнского капитала в качестве первого взноса.</p><br>
+                            <p class="housing-block-text">Сразу после получения положительного ответа от банка вы можете оформлять сделку по покупке квартиры в жилом комплексе «Эволюция».</p><br>
+                            <p class="housing-block-text">Получите консультацию по телефону +7 (383) 207-53-84.</p>
+                          </div>
+                          <div class="col-lg-5">
+                            <form class="payment-type-form">
+                              <h4 class="payment-type-form__title">Получить рассрочку</h4>
+                              <div class="payment-type-form__body">
+                                <div class="form-group">
+                                  <label>Ваше имя</label>
+                                  <input class="form-control" type="text">
+                                </div>
+                                <div class="form-group">
+                                  <label>Телефон</label>
+                                  <input class="form-control" type="text">
+                                </div>
+                                <div class="form-group">
+                                  <input class="form-control" type="submit" value="Подобрать">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="housing-block">
+                    <div class="housing-block-other-offer">
+                      <div class="housing-block-title">Не понравилась эта новостройка?</div>
+                      <p class="housing-block-text">Вас не заинтересовал жилой комплекс ? Специально для вас собраны похожие новостройки. Жилые комплексы от строительной компании ГК «Стрижи», объекты со сдачей в этом же году или построенные в этом же районе. Это очень просто, попробуйте!</p><br>
+                      <p class="housing-block-text">Давайте поищем другие новостройки по подобным критериям!</p>
+                      <div class="housing-block-other-offer__filter">
+                        <div class="axiom-cart-line">
+                          <div class="axiom-cart-line__title">По району:</div><a class="axiom-cart-line__value" href="#">Заельцовский</a>
+                        </div>
+                        <div class="axiom-cart-line">
+                          <div class="axiom-cart-line__title">По застройщику:</div><a class="axiom-cart-line__value" href="#">ГК «Стрижи»</a>
+                        </div>
+                        <div class="axiom-cart-line">
+                          <div class="axiom-cart-line__title">По цене:</div><a class="axiom-cart-line__value" href="#">от 45 000 р/кв.м.</a>
+                        </div>
+                        <div class="axiom-cart-line">
+                          <div class="axiom-cart-line__title">По дате сдачи дома:</div><a class="axiom-cart-line__value" href="#">2017</a>
+                        </div>
+                      </div>
+                      <div class="housing-block-title">Вас точно должны заинтересовать эти новостройки</div>
+                      <div class="row other-housing">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><a class="houseroom" href="#"><img class="houseroom-img" src="static/img/content/houseroom/houseroom.jpg">
+                            <h3 class="houseroom-title">ЖК Пифагор</h3>
+                            <div class="houseroom-description"><span class="houseroom-description__item">Сдача II кв. 2019</span><span class="houseroom-description__item">Площадь от 40 кв.м.</span><span class="houseroom-description__item">Квартиры от 1 000 000 руб.</span><span>
+                                <svg class="icon icon-metro ">
+                                  <use xlink:href="static/img/svg/symbol/sprite.svg#metro"></use>
+                                </svg><span class="houseroom-description__item">Берёзовая роща</span></span></div>
+                            <div class="houseroom-price">Цены от 72 000 за кв.м.</div></a></div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><a class="houseroom" href="#"><img class="houseroom-img" src="static/img/content/houseroom/houseroom.jpg">
+                            <h3 class="houseroom-title">ЖК Пифагор</h3>
+                            <div class="houseroom-description"><span class="houseroom-description__item">Сдача II кв. 2019</span><span class="houseroom-description__item">Площадь от 40 кв.м.</span><span class="houseroom-description__item">Квартиры от 1 000 000 руб.</span><span>
+                                <svg class="icon icon-metro ">
+                                  <use xlink:href="static/img/svg/symbol/sprite.svg#metro"></use>
+                                </svg><span class="houseroom-description__item">Берёзовая роща</span></span></div>
+                            <div class="houseroom-price">Цены от 72 000 за кв.м.</div></a></div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><a class="houseroom" href="#"><img class="houseroom-img" src="static/img/content/houseroom/houseroom.jpg">
+                            <h3 class="houseroom-title">ЖК Пифагор</h3>
+                            <div class="houseroom-description"><span class="houseroom-description__item">Сдача II кв. 2019</span><span class="houseroom-description__item">Площадь от 40 кв.м.</span><span class="houseroom-description__item">Квартиры от 1 000 000 руб.</span><span>
+                                <svg class="icon icon-metro ">
+                                  <use xlink:href="static/img/svg/symbol/sprite.svg#metro"></use>
+                                </svg><span class="houseroom-description__item">Берёзовая роща</span></span></div>
+                            <div class="houseroom-price">Цены от 72 000 за кв.м.</div></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="housing-block" style="margin-bottom: 40px;">
+                    <div class="housing-block-application">
+                      <div class="housing-block-title">Мы не отпутим вас без квартиры вашей мечты!</div>
+                      <div class="housing-block-text">Заполните форму ниже, и мы подберем идеальный для вас вариант. Обещаем.</div>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <form class="application-form">
+                            <div class="form-group">
+                              <label class="title-input">Ваше имя</label>
+                              <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label class="title-input">Телефон</label>
+                              <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label class="title-input">Количество комнат</label><br>
+                              <div class="check">
+                                <input type="radio" id="stud" name="room">
+                                <label for="stud">Студия</label>
+                                <input type="radio" id="one-room" name="room">
+                                <label for="one-room">1-к</label>
+                                <input type="radio" id="two-room" name="room">
+                                <label for="two-room">2-к</label>
+                                <input type="radio" id="three-room" name="room">
+                                <label for="three-room">3-к</label>
+                                <input type="radio" id="four-room" name="room">
+                                <label for="four-room">4-к</label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="title-input">Максимальная стоимость квартиры (не обязательно)</label>
+                              <input class="form-control" type="text" placeholder="Например 1 000 000 руб.">
+                            </div>
+                            <div class="form-group">
+                              <label class="title-input">Желаемая площадь квартиры (не обязательно)</label>
+                              <input class="form-control" type="text" placeholder="Например 1 000 000 руб.">
+                            </div>
+                            <div class="form-group">
+                              <label class="title-input">Дата сдачи ЖК</label><br>
+                              <div class="check">
+                                <input type="radio" id="done" name="date-deliver">
+                                <label for="done">Уже сдан</label>
+                                <input type="radio" id="date-2017" name="date-deliver">
+                                <label for="date-2017">2017</label>
+                                <input type="radio" id="date-2018" name="date-deliver">
+                                <label for="date-2018">2018</label>
+                                <input type="radio" id="date-2019" name="date-deliver">
+                                <label for="date-2018">2019</label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <input class="application-submit" type="submit" value="Отправить заявку">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="housing-manual">
+                            <div class="manual-line">
+                              <div class="rect"></div>
+                              <p class="housing-block-text">Заполните простую форму подбора, укажите свои пожелания по стоимости, площади и району</p>
+                            </div>
+                            <div class="manual-line">
+                              <div class="rect"></div>
+                              <p class="housing-block-text">Отправьте заявку на подбор и немного подождите, наши специалисты приступили к подбору</p>
+                            </div>
+                            <div class="manual-line">
+                              <div class="rect"></div>
+                              <p class="housing-block-text">С вами свяжутся профессиональные специалисты по новостройкам. Вы сможете получить всю необходимую информацию за один звонок</p>
+                            </div>
+                            <div class="manual-line">
+                              <div class="rect"></div>
+                              <p class="housing-block-text">Вы получите конкретные предложения, сможете посетить новостройки и пообщаться с представителями компании-</p>
+                            </div>
+                            <div class="manual-line">
+                              <div class="rect"></div>
+                              <p class="housing-block-text">Услуга подбора квартиры от застройщика ГК «Стрижи» абсолютно бесплатны. Смело делайте заявку:)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a><a class="houseroom-share" href="#"><img class="houseroom-share-img" src="static/img/content/houseroom/houseroom.jpg">
+                  <h3 class="houseroom-share-title">Ипотека военным всего 6%</h3></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-2 col-lg-2">
+                <svg class="icon icon-logo ">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+                </svg>
+              </div>
+              <div class="col-md-10 col-lg-10">
+                <ul class="footer-nav">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Застройщики</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Все новостройки</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Ипотека</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-top">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12"><span class="footer-top__info">Звоните нам 24 часа в сутки</span><a class="footer-top__info phone" href="tel:+7 (383) 263-03-38">+7 (383) 263-03-38</a></div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                <div class="footer-top__social"><a href="#"><img src="/static/img/general/fb.svg"></a><a href="#"><img src="/static/img/general/insta.svg"></a><a href="#"><img src="/static/img/general/vk.svg"></a></div>
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 footer-top__feedback"><a class="footer-top__info underline" href="tel:+7 (383) 263-03-38">Заказать звонок от нашего специалиста</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  </body>
+</html>

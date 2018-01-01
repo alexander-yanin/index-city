@@ -1,0 +1,59 @@
+header#header
+	.header-top
+		.container
+			.row.align-center
+				.col-md-4.col-lg-4.col-sm-4.col-xs-12
+					span.header-top__info Звоните нам 24 часа в сутки
+					a(href="tel:+7 (383) 263-03-38").header-top__info.phone +7 (383) 263-03-38
+				.col-md-4.col-lg-4.col-sm-4.col-xs-12
+					.header-top__social
+						a(href="#")
+							img(src="/static/img/general/fb.svg")
+						a(href="#")
+							img(src="/static/img/general/insta.svg")
+						a(href="#")
+							img(src="/static/img/general/vk.svg")
+				.col-md-4.col-lg-4.col-sm-4.col-xs-12.header-top__feedback
+					a(href="tel:+7 (383) 263-03-38").header-top__info.underline Заказать звонок от нашего специалиста
+	.header-bottom
+		.container
+			.row.align-center
+				.col-md-2.col-lg-2
+					a(href="/")
+						+icon('logo')
+				.col-md-10.col-lg-10
+					ul.header-nav
+						li.header-nav__item
+							a(href="#").header-nav__link Застройщики
+						li.header-nav__item
+							a(href="#").header-nav__link Все новостройки
+						li.header-nav__item
+							a(href="#").header-nav__link Ипотека
+						li.header-nav__item
+							a(href="#").header-nav__link Акции
+						li.header-nav__item
+							a(href="#").header-nav__link Контакты
+				+icon('menu')
+				.mobile-nav
+					.mobile-nav-head
+						a(href="/")
+							+icon('logo')
+						.span +7 (383) 263-03-38
+						+icon('close')
+					.mobile-nav-body
+						ul.mobile-nav-list
+							li.mobile-nav-list__item
+								a(href="#").mobile-nav-list__item__link Застройщики
+							li.mobile-nav-list__item
+								a(href="#").mobile-nav-list__item__link Все новостройки
+							li.mobile-nav-list__item
+								a(href="#").mobile-nav-list__item__link Ипотека
+							li.mobile-nav-list__item
+								a(href="#").mobile-nav-list__item__link Акции
+							li.mobile-nav-list__item
+								a(href="#").mobile-nav-list__item__link Контакты
+							li.mobile-nav-list__item
+
+								a(href="tel:+7 (383) 263-03-38").mobile-nav-list__item__link
+									+icon('phone-call')
+									span(style="margin-left: 5px") Перезвоните мне

@@ -1,0 +1,10 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Карточка ЖК'
+	- var pageClass = 'index-page'
+
+block content
+	include housing_card/banner
+	include ../modules/filter
+	include housing_card/housing_content

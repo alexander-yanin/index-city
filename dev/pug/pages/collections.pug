@@ -1,0 +1,10 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Подборки'
+	- var pageClass = 'index-page'
+
+block content
+	include collections/banner
+	include ../modules/filter
+	include collections/collection_content
