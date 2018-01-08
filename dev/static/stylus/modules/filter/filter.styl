@@ -1,6 +1,9 @@
 .filter-wrapper
   width 100%
-  transform translateY(-50%)
+  //transform translateY(-50%)
+  //transform translate3d(0, 0, 0)
+  margin-top -95px
+  margin-bottom 95px
   .filter
     margin 0 auto
     //size(1040px, auto)
@@ -36,6 +39,11 @@
       font-size rem(14px)
       color #000
       border solid 1px rgba(120, 120, 120, 0.5)
+
+    .dropdown-menu
+      max-width 350px
+      .checkbox
+        white-space normal
 .check
   flex-direction row
   align-items center
@@ -74,6 +82,7 @@
 
 .filter-fluid
   transform none
+  margin 0
   .container
     padding 0
     margin 0

@@ -183,8 +183,11 @@ function mortgageTabs(evt, type) {
 }
 
 
-function changeInput(event, className, char) {
-    $("." + className).val(event.target.value + " " + char);
+function changeInput(event, className) {
+    $("." + className).val(event.target.value.toString().replace(/\D/g,''));
+}
+function changeRange(event, className, char) {
+    $("." + className).val(event.target.value.toString().replace(/\D/g,'') + " " + char);
 }
 
 

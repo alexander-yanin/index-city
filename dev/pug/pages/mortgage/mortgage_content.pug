@@ -48,25 +48,20 @@
 							.mortgage-calculate
 								span.mortgage-calculate-title Ипотечный калькулятор
 								.mortgage-input-group
-									label Хочу
-									select
-										option(value=1) Купить квартиру в новостройке
-										option(value=2) Купить квартиру не в новостройке
-								.mortgage-input-group
 									label Которая стоит
 									.input-range
-										input(type="text", value="3000000 ₽", oninput="changeInput(event, 'price-house-range', '₽')").price-house-input
-										input(type="range", min=300000, max=10000000, value=3000000, oninput="changeInput(event, 'price-house-input', '₽')").price-house-range
+										input(type="text", value="3000000 ₽", oninput="changeInput(event, 'price-house-range')").price-house-input
+										input(type="range", min=300000, max=10000000, value=3000000, oninput="changeRange(event, 'price-house-input', '₽')").price-house-range
 								.mortgage-input-group
 									label У меня есть
 									.input-range
-										input(type="text", value="1000000 ₽" oninput="changeInput(event, 'ihave-range', '₽')").ihave-input
-										input(type="range", min=450000, max=3000000, value=1000000, oninput="changeInput(event, 'ihave-input', '₽')").ihave-range
+										input(type="text", value="1000000 ₽" oninput="changeInput(event, 'ihave-range')").ihave-input
+										input(type="range", min=450000, max=3000000, value=1000000, oninput="changeRange(event, 'ihave-input', '₽')").ihave-range
 								.mortgage-input-group
 									label Кредит на срок
 									.input-range
-										input(type="text", value="5 лет" oninput="changeInput(event, 'age-range', 'лет')").age-input
-										input(type="range", min=1, max=30, value=5, oninput="changeInput(event, 'age-input', 'лет')").age-range
+										input(type="text", value="5 лет" oninput="changeInput(event, 'age-range')").age-input
+										input(type="range", min=1, max=30, value=5, oninput="changeRange(event, 'age-input', 'лет')").age-range
 						.col-md-4
 							.mortgage-calculate-result
 								.mortgage-result-group

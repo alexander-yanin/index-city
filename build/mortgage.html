@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.10/css/bootstrap-multiselect.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
@@ -73,7 +73,7 @@
         </div>
       </header>
       <div class="content">
-        <div class="filter-wrapper filter-fluid">
+        <div class="filter-wrapper">
           <div class="container">
             <div class="filter">
               <div class="row center">
@@ -227,31 +227,24 @@
                     <div class="col-md-8">
                       <div class="mortgage-calculate"><span class="mortgage-calculate-title">Ипотечный калькулятор</span>
                         <div class="mortgage-input-group">
-                          <label>Хочу</label>
-                          <select>
-                            <option value="1">Купить квартиру в новостройке</option>
-                            <option value="2">Купить квартиру не в новостройке</option>
-                          </select>
-                        </div>
-                        <div class="mortgage-input-group">
                           <label>Которая стоит</label>
                           <div class="input-range">
-                            <input class="price-house-input" type="text" value="3000000 ₽" oninput="changeInput(event, 'price-house-range', '₽')">
-                            <input class="price-house-range" type="range" min="300000" max="10000000" value="3000000" oninput="changeInput(event, 'price-house-input', '₽')">
+                            <input class="price-house-input" type="text" value="3000000 ₽" oninput="changeInput(event, 'price-house-range')">
+                            <input class="price-house-range" type="range" min="300000" max="10000000" value="3000000" oninput="changeRange(event, 'price-house-input', '₽')">
                           </div>
                         </div>
                         <div class="mortgage-input-group">
                           <label>У меня есть</label>
                           <div class="input-range">
-                            <input class="ihave-input" type="text" value="1000000 ₽" oninput="changeInput(event, 'ihave-range', '₽')">
-                            <input class="ihave-range" type="range" min="450000" max="3000000" value="1000000" oninput="changeInput(event, 'ihave-input', '₽')">
+                            <input class="ihave-input" type="text" value="1000000 ₽" oninput="changeInput(event, 'ihave-range')">
+                            <input class="ihave-range" type="range" min="450000" max="3000000" value="1000000" oninput="changeRange(event, 'ihave-input', '₽')">
                           </div>
                         </div>
                         <div class="mortgage-input-group">
                           <label>Кредит на срок</label>
                           <div class="input-range">
-                            <input class="age-input" type="text" value="5 лет" oninput="changeInput(event, 'age-range', 'лет')">
-                            <input class="age-range" type="range" min="1" max="30" value="5" oninput="changeInput(event, 'age-input', 'лет')">
+                            <input class="age-input" type="text" value="5 лет" oninput="changeInput(event, 'age-range')">
+                            <input class="age-range" type="range" min="1" max="30" value="5" oninput="changeRange(event, 'age-input', 'лет')">
                           </div>
                         </div>
                       </div>
@@ -345,7 +338,7 @@
     <script src="static/js/jquery.js"></script>
     <script src="static/js/libs.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.10/js/bootstrap-multiselect.min.js"></script>
     <script src="static/js/main.js"></script>
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
   </body>
