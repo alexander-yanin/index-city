@@ -67,7 +67,7 @@ function gallery_slider(id) {
         }
         $(self.slidesArray[self.prevImg]).removeClass("active");
         $(self.slidesArray[self.curImg]).addClass("active");
-        $(self.mainImg).attr("src", $(self.slidesArray[self.curImg]).attr("data-basic"));
+        $(self.mainImg).attr("src", $(self.slidesArray[self.curImg]).attr("src"));
     });
 
     self.prevArrow.on("click", function (e) {
@@ -79,7 +79,7 @@ function gallery_slider(id) {
         }
         $(self.slidesArray[self.prevImg]).removeClass("active");
         $(self.slidesArray[self.curImg]).addClass("active");
-        $(self.mainImg).attr("src", $(self.slidesArray[self.curImg]).attr("data-basic"));
+        $(self.mainImg).attr("src", $(self.slidesArray[self.curImg]).attr("src"));
     });
 
     self.slides.on("click", function (e) {
@@ -88,7 +88,7 @@ function gallery_slider(id) {
         self.curImg = parseInt($(e.target).attr("num-slide-img"));
         $(self.slidesArray[self.prevImg]).removeClass("active");
         $(self.slidesArray[self.curImg]).addClass("active");
-        $(self.mainImg).attr("src", $(self.slidesArray[self.curImg]).attr("data-basic"));
+        $(self.mainImg).attr("src", $(self.slidesArray[self.curImg]).attr("src"));
     });
 
 }
@@ -202,4 +202,15 @@ $(document).ready(function() {
         nonSelectedText: "Не выбрано",
         numberDisplayed: 2
     });
+});
+
+$(".filter-toggle").on("click", function () {
+    var filter = $(".filter");
+    if (filter.css("display") === "none") {
+        $(this).text("Закрыть фильтр");
+        filter.css("display", "block");
+    } else {
+        $(this).text("Открыть фильтр");
+        filter.css("display", "none");
+    }
 });

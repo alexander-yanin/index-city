@@ -23,7 +23,7 @@
       max-height 400px
       padding 16px 20px 0
       display flex
-      flex-direction column
+      flex-direction row
       flex-wrap: wrap
 
     &-footer
@@ -137,7 +137,11 @@
       margin-top 16px
       .first-cell
         display flex
+        padding 13px 0
         justify-content flex-start
+        span
+          max-width 120px
+          word-wrap break-word
         a
           margin-right 10px
       tr
@@ -312,7 +316,7 @@
   &__title
     display block
     word-wrap break-word
-    font-family FiraSansLight
+    font-family FiraSansSemiBold
     font-size rem(14px)
     color #323232
   &__value

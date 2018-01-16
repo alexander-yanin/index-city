@@ -1,20 +1,22 @@
 .filter-wrapper
-	.container
-		.filter
-			.row.center
-				//.col-md-2.col-lg-2.col-sm-6
-				each object in filter
-					.form-group.filter-item
-						label.filter-title= object.title
-						select(multiple="multiple").form-control.filter-select
-							option= object.option
-							option= object.option1
-							option= object.option2
-							option= object.option3
-							option= object.option4
-							option= object.option5
-				.form-group.filter-item.check
-					input(type="checkbox" id="beside-metro")
-					label(for="beside-metro") Рядом с метро
+	button.filter-toggle Открыть фильтр
+	.filter
+		.row.center
+			//.col-md-2.col-lg-2.col-sm-6
+			each object in filter
 				.form-group.filter-item
-					button.search-button Найти
+					label.filter-title= object.title
+					select(multiple="multiple").form-control.filter-select
+						option= object.option
+						option= object.option1
+						option= object.option2
+						option= object.option3
+						option= object.option4
+						option= object.option5
+			.form-group.filter-item.check
+				input(type="checkbox" id="passed")
+				label(for="passed") Дом сдан
+				input(type="checkbox" id="beside-metro")
+				label(for="beside-metro") Рядом с метро
+			.form-group.filter-item
+				button.search-button Найти

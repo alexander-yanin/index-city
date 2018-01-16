@@ -153,6 +153,20 @@
   .header-nav, .footer-nav
     display none !important
 
+  .filter-wrapper.filter-fluid
+    margin-top 55px
+
+  .filter-wrapper
+    margin-top 0
+  .filter
+    display none
+
+  .filter-toggle
+    display block
+
+  .check
+    width 50% !important
+
   .icon-menu
     display block
   .mobile-nav
@@ -165,13 +179,16 @@
       margin 9px 20px
 
 @media (max-width 450px)
+  .filter-wrapper
+    margin-top 0
   .filter
+    display none
     .center
       flex-direction column
       align-items center
 
       .filter-item
-        width 80%
+        width 180px
 
       select
         width 100%

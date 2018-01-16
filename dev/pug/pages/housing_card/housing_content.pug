@@ -14,29 +14,29 @@
 									span.axiom-cart-line__value= object.value
 						.axiom-cart-footer
 							p.axiom-cart-line
-								span.axiom-cart-line__title Типы оплаты:
-								span.axiom-cart-line__value Наличные  |  Ипотека  |  Мат.капитал
+								//span.axiom-cart-line__title Типы оплаты:
+								//span.axiom-cart-line__value Наличные  |  Ипотека  |  Мат.капитал
 				.col-lg-7
 					.housing-gallery(id="gallery-slider")
 						.housing-gallery-main
-							img(src="/static/img/content/houseroom/houseroom.jpg")
+							img(src="")
 							a(href="#").arrow-prev
 								+icon('back')
 							a(href="#").arrow-next
 								+icon('next')
 						.housing-gallery-slides
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello0.jpg" num-slide-img="0").housing-gallery-slide.active
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello1.jpg"   num-slide-img="1").housing-gallery-slide
-							img(src="/static/img/content/index/slide-bg.jpg" data-basic="hello2.jpg"  num-slide-img="2").housing-gallery-slide
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello3.jpg"  num-slide-img="3").housing-gallery-slide
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello4.jpg"  num-slide-img="4").housing-gallery-slide
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello5.jpg"  num-slide-img="5").housing-gallery-slide
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello6.jpg"  num-slide-img="6").housing-gallery-slide
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello7.jpg"  num-slide-img="7").housing-gallery-slide
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello8.jpg"  num-slide-img="8").housing-gallery-slide
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello9.jpg"  num-slide-img="9").housing-gallery-slide
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello10.jpg"  num-slide-img="10").housing-gallery-slide
-							img(src="/static/img/content/houseroom/houseroom.jpg" data-basic="hello11.jpg"  num-slide-img="11").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="0").housing-gallery-slide
+							img(src="/static/img/content/houseroom/1.jpeg" num-slide-img="1").housing-gallery-slide
+							img(src="/static/img/content/houseroom/2.jpeg" num-slide-img="2").housing-gallery-slide
+							img(src="/static/img/content/houseroom/3.jpeg" num-slide-img="3").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom5.jpg" num-slide-img="4").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom6.jpg" num-slide-img="5").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom7.jpg" num-slide-img="6").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom8.jpg" num-slide-img="7").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom9.jpg" num-slide-img="8").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="9").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="10").housing-gallery-slide
+							img(src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="11").housing-gallery-slide
 
 				.col-lg-12
 					.housing-block
@@ -63,7 +63,6 @@
 									th Срок сдачи
 									th Цена за кв.м. от
 									th Цена квартиры от (руб.)
-									td
 								each object in [1, 2, 3, 4, 5, 6, 7]
 									tr
 										td.first-cell
@@ -74,8 +73,6 @@
 										td II кв. 2018
 										td 45 000
 										td 2 000 000
-										td
-											a(href="#") Подать заявку
 
 				.col-lg-12
 					.housing-block

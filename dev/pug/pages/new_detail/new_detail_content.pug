@@ -1,0 +1,80 @@
+.housing-content
+	.container
+		.row
+			.col-lg-9.col-md-8.col-sm-12.col-xs-12
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					.about-developer
+						.about-developer-header Название акции
+						.about-developer-description Большой текст акциии Большой текст акциии Большой текст акциии Большой текст акциии Большой текст акциии Большой текст акциии
+				.col-lg-12
+					.housing-block(style="margin-bottom: 40px")
+						.housing-block-application
+							.housing-block-title Мы не отпутим вас без квартиры вашей мечты!
+							.housing-block-text Заполните форму ниже, и мы подберем идеальный для вас вариант. Обещаем.
+							.row
+								.col-lg-6
+									form.application-form
+										.form-group
+											label.title-input Ваше имя
+											input(type="text").form-control
+										.form-group
+											label.title-input Телефон
+											input(type="text").form-control
+										.form-group
+											label.title-input Количество комнат
+											br
+											.check
+												input(type="radio" id="stud" name="room")
+												label(for="stud") Студия
+												input(type="radio" id="one-room" name="room")
+												label(for="one-room") 1-к
+												input(type="radio" id="two-room" name="room")
+												label(for="two-room") 2-к
+												input(type="radio" id="three-room" name="room")
+												label(for="three-room") 3-к
+												input(type="radio" id="four-room" name="room")
+												label(for="four-room") 4-к
+										.form-group
+											label.title-input Максимальная стоимость квартиры (не обязательно)
+											input(type="text" placeholder="Например 1 000 000 руб.").form-control
+										.form-group
+											label.title-input Желаемая площадь квартиры (не обязательно)
+											input(type="text" placeholder="Например 1 000 000 руб.").form-control
+										.form-group
+											label.title-input Дата сдачи ЖК
+											br
+											.check
+												input(type="radio" id="done" name="date-deliver")
+												label(for="done") Уже сдан
+												input(type="radio" id="date-2017" name="date-deliver")
+												label(for="date-2017") 2017
+												input(type="radio" id="date-2018" name="date-deliver")
+												label(for="date-2018") 2018
+												input(type="radio" id="date-2019" name="date-deliver")
+												label(for="date-2018") 2019
+										.form-group
+											input(type="submit", value="Отправить заявку").application-submit
+								.col-lg-6
+									.housing-manual
+										.manual-line
+											.rect
+											p.housing-block-text Заполните простую форму подбора, укажите свои пожелания по стоимости, площади и району
+										.manual-line
+											.rect
+											p.housing-block-text Отправьте заявку на подбор и немного подождите, наши специалисты приступили к подбору
+										.manual-line
+											.rect
+											p.housing-block-text С вами свяжутся профессиональные специалисты по новостройкам. Вы сможете получить всю необходимую информацию за один звонок
+										.manual-line
+											.rect
+											p.housing-block-text Вы получите конкретные предложения, сможете посетить новостройки и пообщаться с представителями компании-
+										.manual-line
+											.rect
+											p.housing-block-text Услуга подбора квартиры от застройщика ГК «Стрижи» абсолютно бесплатны. Смело делайте заявку:)
+			.col-lg-3.col-md-4.col-sm-12.col-xs-12
+				.col-lg-12.col-md-12.col-sm-6.col-xs-12
+					include ../../modules/share
+				.col-lg-12.col-md-12.col-sm-6.col-xs-12
+					include ../../modules/share
+				.col-lg-12.col-md-12.col-sm-6.col-xs-12
+					include ../../modules/share

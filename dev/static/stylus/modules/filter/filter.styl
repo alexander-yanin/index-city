@@ -15,14 +15,16 @@
       display flex
       justify-content flex-start
       flex-wrap wrap
-      size(100%, inherit)
-      padding 19px 20px 0
+      max-width 880px
+      height inherit
+      padding 19px 0 0
       margin 0 auto
     .filter-item
       display flex
       flex-direction column
+      align-items flex-start
       justify-content flex-end
-      width 200px
+      width 170px
       margin 0
       padding: 0 20px 14px
     &-title
@@ -42,18 +44,21 @@
 
     .dropdown-menu
       max-width 350px
+      max-height 400px
       .checkbox
         white-space normal
 .check
   flex-direction row
   align-items center
   justify-content flex-start
+  width 180px !important
   input
     display none
     & + label
       position relative
       top 10px
       cursor pointer
+      white-space nowrap
       font-family FiraSansLight
       color rgba(120, 120, 120, 0.87)
       font-size rem(14px)
@@ -78,20 +83,23 @@
       size(20px)
 .check
   label
-    margin-bottom 17px
+    margin-bottom 12px
 
 .filter-fluid
   transform none
   margin 0
-  .container
-    padding 0
-    margin 0
+  .filter
     width 100%
-    .filter
-      width 100%
-      max-width 100%
-      .row.center
-        max-width 1040px
+    max-width 100%
+    .row.center
+      max-width 880px
+
+.filter-toggle
+  display none
+  width 50%
+  height 40px
+  border none
+  margin 10px auto
 
 .search-button
   width 160px

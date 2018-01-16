@@ -1,0 +1,10 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Детальная акция'
+	- var pageClass = 'index-page'
+
+block content
+	include housing_card/banner
+	include ../modules/filter
+	include new_detail/new_detail_content
