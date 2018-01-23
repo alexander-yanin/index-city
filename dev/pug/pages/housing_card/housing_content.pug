@@ -16,6 +16,15 @@
 							p.axiom-cart-line
 								//span.axiom-cart-line__title Типы оплаты:
 								//span.axiom-cart-line__value Наличные  |  Ипотека  |  Мат.капитал
+					.axiom-cart
+						.axiom-cart-title Особенности жилого комплекса
+						.axiom-cart-content
+							each object in axiom
+								p.axiom-cart-line
+									span.axiom-cart-line__title= object.title
+									span.axiom-cart-line__value= object.value
+						.axiom-cart-footer
+							p.axiom-cart-line
 				.col-lg-7
 					.housing-gallery(id="gallery-slider")
 						.housing-gallery-main
