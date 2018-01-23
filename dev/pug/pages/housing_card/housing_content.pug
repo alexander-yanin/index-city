@@ -16,13 +16,16 @@
 							p.axiom-cart-line
 								//span.axiom-cart-line__title Типы оплаты:
 								//span.axiom-cart-line__value Наличные  |  Ипотека  |  Мат.капитал
-					.axiom-cart
-						.axiom-cart-title Особенности жилого комплекса
-						.axiom-cart-content
-							each object in axiom
-								p.axiom-cart-line
-									span.axiom-cart-line__title= object.title
-									span.axiom-cart-line__value= object.value
+					.axiom-cart.feature
+						.axiom-cart-title.feature Особенности жилого комплекса
+						.axiom-cart-content.feature
+							//each object in axiom
+							p.axiom-cart-line.feature
+								img(src="/static/img/general/metro.svg").axiom-icon
+								span.axiom-cart-line__value Подземный паркинг паркингпаркинг паркинг паркинг паркинг
+							p.axiom-cart-line.feature
+								img(src="/static/img/general/metro.svg").axiom-icon
+								span.axiom-cart-line__value Подземный паркинг
 						.axiom-cart-footer
 							p.axiom-cart-line
 				.col-lg-7
