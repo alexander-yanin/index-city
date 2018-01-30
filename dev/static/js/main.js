@@ -184,10 +184,19 @@ function mortgageTabs(evt, type) {
 
 
 function changeInput(event, className) {
-    $("." + className).val(event.target.value.toString().replace(/\D/g,''));
+    $("." + className).val(event.target.value.toString().replace(/[^.\d]+/g,""));
 }
 function changeRange(event, className, char) {
-    $("." + className).val(event.target.value.toString().replace(/\D/g,'') + " " + char);
+    $("." + className).val(event.target.value.toString().replace(/[^.\d]+/g,"") + " " + char);
+    calcMortgage();
+}
+
+
+function calcMortgage() {
+    var priceHouse = parseFloat($(".price-house-input").val().replace(/[^.\d]+/g,""));
+    var iHave = parseFloat($(".ihave-input").val().replace(/[^.\d]+/g,""));
+    var percent = parseFloat($(".percent-input").val().replace(/[^.\d]+/g,""));
+    var age = parseFloat($(".age-input").val().replace(/[^.\d]+/g,""));
 }
 
 
