@@ -69,6 +69,7 @@
 								a(href="#").housing-block-plan_and_price__link Подать заявку на подбор
 							table
 								tr
+									th
 									th Планировка
 									th Этаж
 									th Площадь (кв.м)
@@ -77,8 +78,9 @@
 									th Цена квартиры от (руб.)
 								each object in [1, 2, 3, 4, 5, 6, 7]
 									tr
-										td.first-cell
+										td
 											a(href="#", onclick="openModalImage(event, '/static/img/content/houseroom/houseroom.jpg')") План
+										td.first-cell
 											span Студия
 										td 2/12
 										td 100/44/12

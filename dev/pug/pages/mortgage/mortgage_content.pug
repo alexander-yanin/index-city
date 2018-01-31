@@ -67,16 +67,13 @@
 										input(type="text", value="5 лет" oninput="changeInput(event, 'age-range')").age-input
 										input(type="range", min=1, max=30, value=5, oninput="changeRange(event, 'age-input', 'лет')").age-range
 						.col-md-4
-							.mortgage-calculate-result
+							.mortgage-calculate-result#calc
 								.mortgage-result-group
 									span.title Сумма кредита
-									span.value 2 000 000 ₽
+									span.value.sum-credit 2 000 000 ₽
 								.mortgage-result-group
 									span.title Ежемесячный платёж
-									span.value 30 578 ₽
-								.mortgage-result-group
-									span.title Процентная ставка
-									span.value 7,4 %
+									span.value.pay-in-month 30 578 ₽
 								.mortgage-form
 									.mortgage-form-title Подать заявку на ипотеку
 									.mortgage-form-group
@@ -87,6 +84,69 @@
 										input(type="text")
 									.mortgage-form-group
 										input(type="submit" value="Подать заявку")
+
+					.housing-block(style="margin-bottom: 40px")
+						.housing-block-application
+							.row
+								.col-lg-6
+									form.application-form
+										.form-group
+											label.title-input Ваше имя
+											input(type="text").form-control
+										.form-group
+											label.title-input Телефон
+											input(type="text").form-control
+										.form-group
+											label.title-input Количество комнат
+											br
+											.check
+												input(type="radio" id="stud" name="room")
+												label(for="stud") Студия
+												input(type="radio" id="one-room" name="room")
+												label(for="one-room") 1-к
+												input(type="radio" id="two-room" name="room")
+												label(for="two-room") 2-к
+												input(type="radio" id="three-room" name="room")
+												label(for="three-room") 3-к
+												input(type="radio" id="four-room" name="room")
+												label(for="four-room") 4-к
+										.form-group
+											label.title-input Максимальная стоимость квартиры (не обязательно)
+											input(type="text" placeholder="Например 1 000 000 руб.").form-control
+										.form-group
+											label.title-input Желаемая площадь квартиры (не обязательно)
+											input(type="text" placeholder="Например 1 000 000 руб.").form-control
+										.form-group
+											label.title-input Дата сдачи ЖК
+											br
+											.check
+												input(type="radio" id="done" name="date-deliver")
+												label(for="done") Уже сдан
+												input(type="radio" id="date-2017" name="date-deliver")
+												label(for="date-2017") 2017
+												input(type="radio" id="date-2018" name="date-deliver")
+												label(for="date-2018") 2018
+												input(type="radio" id="date-2019" name="date-deliver")
+												label(for="date-2018") 2019
+										.form-group
+											input(type="submit", value="Отправить заявку").application-submit
+								.col-lg-6
+									.housing-manual
+										.manual-line
+											.rect
+											p.housing-block-text Заполните простую форму подбора, укажите свои пожелания по стоимости, площади и району
+										.manual-line
+											.rect
+											p.housing-block-text Отправьте заявку на подбор и немного подождите, наши специалисты приступили к подбору
+										.manual-line
+											.rect
+											p.housing-block-text С вами свяжутся профессиональные специалисты по новостройкам. Вы сможете получить всю необходимую информацию за один звонок
+										.manual-line
+											.rect
+											p.housing-block-text Вы получите конкретные предложения, сможете посетить новостройки и пообщаться с представителями компании-
+										.manual-line
+											.rect
+											p.housing-block-text Услуга подбора квартиры от застройщика ГК «Стрижи» абсолютно бесплатны. Смело делайте заявку:)
 				#mortgage_info.tabcontent
 					.row
 						.col-md-12
@@ -113,66 +173,4 @@
 											.mortgage-item__text They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard…
 												a(href="#") Читать полностью
 											a(href="#").mortgage-item__link Записаться к брокеру
-			.col-lg-9
-				.housing-block(style="margin-bottom: 40px")
-					.housing-block-application
-						.row
-							.col-lg-6
-								form.application-form
-									.form-group
-										label.title-input Ваше имя
-										input(type="text").form-control
-									.form-group
-										label.title-input Телефон
-										input(type="text").form-control
-									.form-group
-										label.title-input Количество комнат
-										br
-										.check
-											input(type="radio" id="stud" name="room")
-											label(for="stud") Студия
-											input(type="radio" id="one-room" name="room")
-											label(for="one-room") 1-к
-											input(type="radio" id="two-room" name="room")
-											label(for="two-room") 2-к
-											input(type="radio" id="three-room" name="room")
-											label(for="three-room") 3-к
-											input(type="radio" id="four-room" name="room")
-											label(for="four-room") 4-к
-									.form-group
-										label.title-input Максимальная стоимость квартиры (не обязательно)
-										input(type="text" placeholder="Например 1 000 000 руб.").form-control
-									.form-group
-										label.title-input Желаемая площадь квартиры (не обязательно)
-										input(type="text" placeholder="Например 1 000 000 руб.").form-control
-									.form-group
-										label.title-input Дата сдачи ЖК
-										br
-										.check
-											input(type="radio" id="done" name="date-deliver")
-											label(for="done") Уже сдан
-											input(type="radio" id="date-2017" name="date-deliver")
-											label(for="date-2017") 2017
-											input(type="radio" id="date-2018" name="date-deliver")
-											label(for="date-2018") 2018
-											input(type="radio" id="date-2019" name="date-deliver")
-											label(for="date-2018") 2019
-									.form-group
-										input(type="submit", value="Отправить заявку").application-submit
-							.col-lg-6
-								.housing-manual
-									.manual-line
-										.rect
-										p.housing-block-text Заполните простую форму подбора, укажите свои пожелания по стоимости, площади и району
-									.manual-line
-										.rect
-										p.housing-block-text Отправьте заявку на подбор и немного подождите, наши специалисты приступили к подбору
-									.manual-line
-										.rect
-										p.housing-block-text С вами свяжутся профессиональные специалисты по новостройкам. Вы сможете получить всю необходимую информацию за один звонок
-									.manual-line
-										.rect
-										p.housing-block-text Вы получите конкретные предложения, сможете посетить новостройки и пообщаться с представителями компании-
-									.manual-line
-										.rect
-										p.housing-block-text Услуга подбора квартиры от застройщика ГК «Стрижи» абсолютно бесплатны. Смело делайте заявку:)
+

@@ -258,10 +258,9 @@
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <div class="mortgage-calculate-result">
-                        <div class="mortgage-result-group"><span class="title">Сумма кредита</span><span class="value">2 000 000 ₽</span></div>
-                        <div class="mortgage-result-group"><span class="title">Ежемесячный платёж</span><span class="value">30 578 ₽</span></div>
-                        <div class="mortgage-result-group"><span class="title">Процентная ставка</span><span class="value">7,4 %</span></div>
+                      <div class="mortgage-calculate-result" id="calc">
+                        <div class="mortgage-result-group"><span class="title">Сумма кредита</span><span class="value sum-credit">2 000 000 ₽</span></div>
+                        <div class="mortgage-result-group"><span class="title">Ежемесячный платёж</span><span class="value pay-in-month">30 578 ₽</span></div>
                         <div class="mortgage-form">
                           <div class="mortgage-form-title">Подать заявку на ипотеку</div>
                           <div class="mortgage-form-group">
@@ -274,6 +273,87 @@
                           </div>
                           <div class="mortgage-form-group">
                             <input type="submit" value="Подать заявку">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="housing-block" style="margin-bottom: 40px;">
+                    <div class="housing-block-application">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <form class="application-form">
+                            <div class="form-group">
+                              <label class="title-input">Ваше имя</label>
+                              <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label class="title-input">Телефон</label>
+                              <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label class="title-input">Количество комнат</label><br>
+                              <div class="check">
+                                <input type="radio" id="stud" name="room">
+                                <label for="stud">Студия</label>
+                                <input type="radio" id="one-room" name="room">
+                                <label for="one-room">1-к</label>
+                                <input type="radio" id="two-room" name="room">
+                                <label for="two-room">2-к</label>
+                                <input type="radio" id="three-room" name="room">
+                                <label for="three-room">3-к</label>
+                                <input type="radio" id="four-room" name="room">
+                                <label for="four-room">4-к</label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="title-input">Максимальная стоимость квартиры (не обязательно)</label>
+                              <input class="form-control" type="text" placeholder="Например 1 000 000 руб.">
+                            </div>
+                            <div class="form-group">
+                              <label class="title-input">Желаемая площадь квартиры (не обязательно)</label>
+                              <input class="form-control" type="text" placeholder="Например 1 000 000 руб.">
+                            </div>
+                            <div class="form-group">
+                              <label class="title-input">Дата сдачи ЖК</label><br>
+                              <div class="check">
+                                <input type="radio" id="done" name="date-deliver">
+                                <label for="done">Уже сдан</label>
+                                <input type="radio" id="date-2017" name="date-deliver">
+                                <label for="date-2017">2017</label>
+                                <input type="radio" id="date-2018" name="date-deliver">
+                                <label for="date-2018">2018</label>
+                                <input type="radio" id="date-2019" name="date-deliver">
+                                <label for="date-2018">2019</label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <input class="application-submit" type="submit" value="Отправить заявку">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="housing-manual">
+                            <div class="manual-line">
+                              <div class="rect"></div>
+                              <p class="housing-block-text">Заполните простую форму подбора, укажите свои пожелания по стоимости, площади и району</p>
+                            </div>
+                            <div class="manual-line">
+                              <div class="rect"></div>
+                              <p class="housing-block-text">Отправьте заявку на подбор и немного подождите, наши специалисты приступили к подбору</p>
+                            </div>
+                            <div class="manual-line">
+                              <div class="rect"></div>
+                              <p class="housing-block-text">С вами свяжутся профессиональные специалисты по новостройкам. Вы сможете получить всю необходимую информацию за один звонок</p>
+                            </div>
+                            <div class="manual-line">
+                              <div class="rect"></div>
+                              <p class="housing-block-text">Вы получите конкретные предложения, сможете посетить новостройки и пообщаться с представителями компании-</p>
+                            </div>
+                            <div class="manual-line">
+                              <div class="rect"></div>
+                              <p class="housing-block-text">Услуга подбора квартиры от застройщика ГК «Стрижи» абсолютно бесплатны. Смело делайте заявку:)</p>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -299,89 +379,6 @@
                               <div class="mortgage-item__title"><span class="name">Беспроцентная рассрочка</span><span class="rate">Ставка: от 10%</span></div>
                               <div class="mortgage-item__text">They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard…<a href="#">Читать полностью</a></div><a class="mortgage-item__link" href="#">Записаться к брокеру</a>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-9">
-                <div class="housing-block" style="margin-bottom: 40px;">
-                  <div class="housing-block-application">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <form class="application-form">
-                          <div class="form-group">
-                            <label class="title-input">Ваше имя</label>
-                            <input class="form-control" type="text">
-                          </div>
-                          <div class="form-group">
-                            <label class="title-input">Телефон</label>
-                            <input class="form-control" type="text">
-                          </div>
-                          <div class="form-group">
-                            <label class="title-input">Количество комнат</label><br>
-                            <div class="check">
-                              <input type="radio" id="stud" name="room">
-                              <label for="stud">Студия</label>
-                              <input type="radio" id="one-room" name="room">
-                              <label for="one-room">1-к</label>
-                              <input type="radio" id="two-room" name="room">
-                              <label for="two-room">2-к</label>
-                              <input type="radio" id="three-room" name="room">
-                              <label for="three-room">3-к</label>
-                              <input type="radio" id="four-room" name="room">
-                              <label for="four-room">4-к</label>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="title-input">Максимальная стоимость квартиры (не обязательно)</label>
-                            <input class="form-control" type="text" placeholder="Например 1 000 000 руб.">
-                          </div>
-                          <div class="form-group">
-                            <label class="title-input">Желаемая площадь квартиры (не обязательно)</label>
-                            <input class="form-control" type="text" placeholder="Например 1 000 000 руб.">
-                          </div>
-                          <div class="form-group">
-                            <label class="title-input">Дата сдачи ЖК</label><br>
-                            <div class="check">
-                              <input type="radio" id="done" name="date-deliver">
-                              <label for="done">Уже сдан</label>
-                              <input type="radio" id="date-2017" name="date-deliver">
-                              <label for="date-2017">2017</label>
-                              <input type="radio" id="date-2018" name="date-deliver">
-                              <label for="date-2018">2018</label>
-                              <input type="radio" id="date-2019" name="date-deliver">
-                              <label for="date-2018">2019</label>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <input class="application-submit" type="submit" value="Отправить заявку">
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="housing-manual">
-                          <div class="manual-line">
-                            <div class="rect"></div>
-                            <p class="housing-block-text">Заполните простую форму подбора, укажите свои пожелания по стоимости, площади и району</p>
-                          </div>
-                          <div class="manual-line">
-                            <div class="rect"></div>
-                            <p class="housing-block-text">Отправьте заявку на подбор и немного подождите, наши специалисты приступили к подбору</p>
-                          </div>
-                          <div class="manual-line">
-                            <div class="rect"></div>
-                            <p class="housing-block-text">С вами свяжутся профессиональные специалисты по новостройкам. Вы сможете получить всю необходимую информацию за один звонок</p>
-                          </div>
-                          <div class="manual-line">
-                            <div class="rect"></div>
-                            <p class="housing-block-text">Вы получите конкретные предложения, сможете посетить новостройки и пообщаться с представителями компании-</p>
-                          </div>
-                          <div class="manual-line">
-                            <div class="rect"></div>
-                            <p class="housing-block-text">Услуга подбора квартиры от застройщика ГК «Стрижи» абсолютно бесплатны. Смело делайте заявку:)</p>
                           </div>
                         </div>
                       </div>

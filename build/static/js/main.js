@@ -4,8 +4,10 @@ $(document).ready(function () {
     new slider('slider-hot-offer');
     new slider('slider-news');
     new gallery_slider('gallery-slider');
+    document.getElementById("calc") ? calcMortgage() : null;
     document.getElementById("defaultOpen") ? document.getElementById("defaultOpen").click() : null;
     document.getElementById("mortgage_default_tab") ? document.getElementById("mortgage_default_tab").click() : null;
+
 });
 
 function slider(id) {
@@ -185,6 +187,7 @@ function mortgageTabs(evt, type) {
 
 function changeInput(event, className) {
     $("." + className).val(event.target.value.toString().replace(/[^.\d]+/g,""));
+    calcMortgage();
 }
 function changeRange(event, className, char) {
     $("." + className).val(event.target.value.toString().replace(/[^.\d]+/g,"") + " " + char);
@@ -193,10 +196,16 @@ function changeRange(event, className, char) {
 
 
 function calcMortgage() {
-    var priceHouse = parseFloat($(".price-house-input").val().replace(/[^.\d]+/g,""));
-    var iHave = parseFloat($(".ihave-input").val().replace(/[^.\d]+/g,""));
-    var percent = parseFloat($(".percent-input").val().replace(/[^.\d]+/g,""));
-    var age = parseFloat($(".age-input").val().replace(/[^.\d]+/g,""));
+    var priceHouse = parseFloat($(".price-house-input").val().replace(/[^.\d]+/g,"")),
+        iHave = parseFloat($(".ihave-input").val().replace(/[^.\d]+/g,"")),
+        percent = parseFloat($(".percent-input").val().replace(/[^.\d]+/g,"")/100),
+        age = parseFloat($(".age-input").val().replace(/[^.\d]+/g,"")),
+        sumMort = priceHouse - iHave,
+        monthCount = age * 12,
+        percentPerMonth = percent/12;
+    $(".sum-credit").html(sumMort +  "₽");
+    var payInMonth = (sumMort * (percentPerMonth/(1-Math.pow((1+percentPerMonth), -monthCount)))).toFixed(2);
+    $(".pay-in-month").html(payInMonth + "₽");
 }
 
 
