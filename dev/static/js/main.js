@@ -203,9 +203,9 @@ function calcMortgage() {
         sumMort = priceHouse - iHave,
         monthCount = age * 12,
         percentPerMonth = percent/12;
-    $(".sum-credit").html(sumMort +  "₽");
+    $(".sum-credit").html(sumMort +  "&#8381;");
     var payInMonth = (sumMort * (percentPerMonth/(1-Math.pow((1+percentPerMonth), -monthCount)))).toFixed(2);
-    $(".pay-in-month").html(payInMonth + "₽");
+    $(".pay-in-month").html(payInMonth + "&#8381;");
 }
 
 
