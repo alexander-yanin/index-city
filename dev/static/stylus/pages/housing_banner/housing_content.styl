@@ -356,7 +356,7 @@
 .tabcontent
   display none
 
-.modal-view-image
+.modal-plan-overlay
   z-index 10
   display none
   position fixed
@@ -366,11 +366,186 @@
   right 0
   background rgba(0, 0, 0, .6)
   overflow auto
-  .modal-image
+
+  .modal-plan
     position absolute
-    left 50%
     top 50%
-    transform translate(-50%, -50%)
-    display block
-    max-width 60%
-    height auto
+    left 50%
+    display flex
+    flex-direction row
+    width 964px
+    min-height 560px
+    transform translate(-50%, -40%)
+    background-color #fff
+    border-radius 5px
+    overflow hidden
+
+  .modal-left-block
+    display flex
+    flex-direction column
+    flex-shrink 0
+    width 460px
+
+    .modal-image-wrapper
+      width 100%
+      height 100%
+
+    .modal-image
+      width 100%
+
+    &__foter
+      display flex
+      justify-content center
+      align-items center
+      height: 45px;
+      background-color: #33beca;
+      font-size rem(20px)
+      font-family SourceSansPro
+      color #fff
+
+  .modal-right-block
+    width 100%
+    background-color #f3f3f3
+    padding-top 25px
+    box-shadow -1px 0 2px 0 rgba(0, 0, 0, 0.3)
+
+    &__header
+      display flex
+      flex-direction: row
+      justify-content space-around
+      margin-bottom 54px
+
+      &-item
+        position relative
+        display flex
+        flex-direction column
+        width 30%
+
+
+        &:nth-child(2):before
+          content ""
+          position absolute
+          right 0
+          height 100%
+          width 1px
+          background-color #8a8a8a
+          opacity .5
+
+        &:nth-child(2):after
+          content ""
+          position absolute
+          left 0
+          height 100%
+          width 1px
+          background-color #8a8a8a
+          opacity .5
+
+        &-title
+          font-size rem(14px)
+          font-family FiraSans
+          text-align center
+          text-transform uppercase
+          color rgba(50, 50, 50, 0.54)
+
+        &-text
+          font-size rem(24px)
+          font-family FiraSansSemiBold
+          text-align center
+          color #323232
+
+    &__body
+      display block
+      margin-left 26px
+      .checked-list
+        display flex
+        flex-direction: column
+        margin-bottom 8px
+
+        &-item
+          display flex
+          flex-direction row
+          margin-bottom 17.5px
+
+        .checked-icon-wrap
+          display flex
+          justify-content center
+          align-items center
+          border 1px solid #8a8a8a
+          size(23.5px)
+          flex-shrink 0
+          border-radius 100%
+          margin-right 16.5px
+
+          .icon-checked
+            width 13px
+            height 13px
+            margin-left 4px
+            margin-bottom 2px
+            fill #33beca
+
+        &-text
+          font-size rem(14px)
+          font-family FiraSansRegular
+          color #323232
+      .plan-btn
+        display flex
+        justify-content center
+        align-items center
+        width 246px
+        height 40px
+        margin-bottom 48px
+        border-radius 5px
+        background-color #007580
+        border solid 1px rgba(120, 120, 120, 0.5)
+        font-size 16px
+        text-decoration none
+        font-family FiraSansRegular
+        color #fff
+
+    &__footer
+      margin-left 26px
+
+      &-title
+        font-size 20px
+        font-family FiraSansRegular
+        color #323232
+        margin-bottom 16px
+
+      &-form
+        display flex
+        align-items flex-end
+        margin-bottom 24px
+
+        &-group
+          display flex
+          flex-direction column
+
+          label
+            font-size rem(14px)
+            font-family FiraSansLight
+            margin-left 10px
+            color rgba(120, 120, 120, 0.87)
+        &-input
+          width 246px
+          height 40px
+          border-radius 3px
+          background-color #ffffff
+          padding 10px
+          border solid 1px rgba(120, 120, 120, 0.5)
+
+        &-submit
+          width 216px
+          height 40px
+          border-radius 5px
+          background-color #007580
+          border solid 1px rgba(120, 120, 120, 0.5)
+          color #fff
+          margin-left 8px
+      &-text, &-phone
+        font-family FiraSansRegular
+        color #323232
+      &-text
+        font-size rem(16px)
+        margin-bottom 8px
+      &-phone
+        font-size rem(24px)

@@ -153,11 +153,15 @@ function openPayment(evt, paymentType) {
 function openModalImage(evt, imagePath) {
     evt.preventDefault();
     $('.modal-image').attr('src', imagePath);
-    $('.modal-view-image').show();
+    $('.modal-plan-overlay').show();
 }
 
-function closeModalImage() {
-    $('.modal-view-image').hide();
+function closeModalImage(evt, context) {
+    console.log(evt.target);
+    console.log(context);
+    if (evt.target.className === context.className) {
+        $('.modal-plan-overlay').hide();
+    }
 }
 
 
@@ -186,11 +190,13 @@ function mortgageTabs(evt, type) {
 
 
 function changeInput(event, className) {
-    $("." + className).val(event.target.value.toString().replace(/[^.\d]+/g,""));
+    // $("." + className).val(event.target.value.toString().replace(/[^.\d]+/g,""));
+    $("." + className).slider("value", event.target.value.toString().replace(/[^.\d]+/g,""));
+
     calcMortgage();
 }
-function changeRange(event, className, char) {
-    $("." + className).val(event.target.value.toString().replace(/[^.\d]+/g,"") + " " + char);
+function changeRange(className, val, char) {
+    $("." + className).val(val.toString().replace(/[^.\d]+/g,"") + " " + char);
     calcMortgage();
 }
 
@@ -232,3 +238,51 @@ $(".filter-toggle").on("click", function () {
         filter.css("display", "none");
     }
 });
+
+
+$( document ).ready(function() {
+
+    function createHoverState (myobject){
+        myobject.hover(function() {
+            $(this).prev().toggleClass('hilite');
+        });
+        myobject.mousedown(function() {
+            $(this).prev().addClass('dragging');
+            $("*").mouseup(function() {
+                $(myobject).prev().removeClass('dragging');
+            });
+        });
+    }
+
+    $(".price-house-range").slider({orientation: "horizontal", range: "min", min: 300000, max: 10000000, value: 3000000, animate: 1300});
+    $(".ihave-range").slider({orientation: "horizontal", range: "min", min: 450000, max: 3000000, value: 1000000, animate: 1300});
+    $(".percent-range").slider({orientation: "horizontal", range: "min", step: 0.01, min: 5, max: 15, value: 9.9, animate: 1300});
+    $(".age-range").slider({orientation: "horizontal", range: "min", min: 1, max: 30, value: 5, animate: 1300});
+
+    createHoverState($(".slider-range a.ui-slider-handle"));
+
+});
+
+
+$( document ).ready(function() {
+    var inputDict = {
+        "price-house-input": "₽",
+        "ihave-input": "₽",
+        "percent-input": "%",
+        "age-input": "лет"
+    };
+
+    $('.slider-range').each(function(index) {
+        $(this).slider({
+            slide: function( event, ui ) {
+                var className = $(this)[0].classList[2].replace("range", "input");
+                var val = $(this).slider("option", "value");
+                console.log(className);
+                changeRange(className, val, inputDict[className])
+            }
+        });
+    });
+});
+
+
+$(".modal-right-block__footer-form-input").inputmask("+7 (999) 999-999");

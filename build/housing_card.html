@@ -188,7 +188,70 @@
           </div>
         </div>
         <div class="housing-content">
-          <div class="modal-view-image" onclick="closeModalImage()"><img class="modal-image"></div>
+          <div class="modal-plan-overlay" onclick="closeModalImage(event, this)">
+            <div class="modal-plan">
+              <div class="modal-left-block">
+                <div class="modal-image-wrapper"><img class="modal-image"></div>
+                <div class="modal-left-block__foter">от 1 млн. рублей</div>
+              </div>
+              <div class="modal-right-block">
+                <div class="modal-right-block__header">
+                  <div class="modal-right-block__header-item">
+                    <div class="modal-right-block__header-item-title">Кол-во комнат</div>
+                    <div class="modal-right-block__header-item-text">1-к квартира</div>
+                  </div>
+                  <div class="modal-right-block__header-item">
+                    <div class="modal-right-block__header-item-title">Площадь</div>
+                    <div class="modal-right-block__header-item-text">36 кв.м.</div>
+                  </div>
+                  <div class="modal-right-block__header-item">
+                    <div class="modal-right-block__header-item-title">Срок сдачи</div>
+                    <div class="modal-right-block__header-item-text">II 2019</div>
+                  </div>
+                </div>
+                <div class="modal-right-block__body">
+                  <div class="checked-list">
+                    <div class="checked-list-item">
+                      <div class="checked-icon-wrap">
+                        <svg class="icon icon-checked ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                      <div class="checked-item-text">Ипотека от 9% без первоначального взноса</div>
+                    </div>
+                    <div class="checked-list-item">
+                      <div class="checked-icon-wrap">
+                        <svg class="icon icon-checked ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                      <div class="checked-item-text">Выгодные условия Trade-In</div>
+                    </div>
+                    <div class="checked-list-item">
+                      <div class="checked-icon-wrap">
+                        <svg class="icon icon-checked ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                      <div class="checked-item-text">Беспроцентная рассрочка</div>
+                    </div>
+                  </div><a class="plan-btn" href="#">Узнать обо всех акциях</a>
+                </div>
+                <div class="modal-right-block__footer">
+                  <div class="modal-right-block__footer-title">Хотите узнать больше о данной квартире?</div>
+                  <form class="modal-right-block__footer-form">
+                    <div class="modal-right-block__footer-form-group">
+                      <label>Ваш телефон</label>
+                      <input class="modal-right-block__footer-form-input" type="text">
+                    </div>
+                    <input class="modal-right-block__footer-form-submit" type="submit" value="Узнать о наличии и цене">
+                  </form>
+                  <div class="modal-right-block__footer-text">Или узнайте цену в отделе продаж:</div>
+                  <div class="modal-right-block__footer-phone">+7 (383) 263-03-38</div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="container">
             <div class="row">
               <div class="col-lg-9">
@@ -235,7 +298,7 @@
                         <svg class="icon icon-next ">
                           <use xlink:href="static/img/svg/symbol/sprite.svg#next"></use>
                         </svg></a></div>
-                    <div class="housing-gallery-slides"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="0"><img class="housing-gallery-slide" src="/static/img/content/houseroom/1.jpeg" num-slide-img="1"><img class="housing-gallery-slide" src="/static/img/content/houseroom/2.jpeg" num-slide-img="2"><img class="housing-gallery-slide" src="/static/img/content/houseroom/3.jpeg" num-slide-img="3"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom5.jpg" num-slide-img="4"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom6.jpg" num-slide-img="5"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom7.jpg" num-slide-img="6"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom8.jpg" num-slide-img="7"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom9.jpg" num-slide-img="8"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="9"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="10"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="11"></div>
+                    <div class="housing-gallery-slides"><img class="housing-gallery-slide" src="static/img/content/houseroom/houseroom.jpg" num-slide-img="0"><img class="housing-gallery-slide" src="static/img/content/houseroom/1.jpeg" num-slide-img="1"><img class="housing-gallery-slide" src="/static/img/content/houseroom/2.jpeg" num-slide-img="2"><img class="housing-gallery-slide" src="/static/img/content/houseroom/3.jpeg" num-slide-img="3"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom5.jpg" num-slide-img="4"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom6.jpg" num-slide-img="5"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom7.jpg" num-slide-img="6"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom8.jpg" num-slide-img="7"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom9.jpg" num-slide-img="8"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="9"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="10"><img class="housing-gallery-slide" src="/static/img/content/houseroom/houseroom.jpg" num-slide-img="11"></div>
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -489,15 +552,15 @@
                             <div class="form-group">
                               <label class="title-input">Количество комнат</label><br>
                               <div class="check">
-                                <input type="radio" id="stud" name="room">
+                                <input type="checkbox" id="stud" name="room">
                                 <label for="stud">Студия</label>
-                                <input type="radio" id="one-room" name="room">
+                                <input type="checkbox" id="one-room" name="room">
                                 <label for="one-room">1-к</label>
-                                <input type="radio" id="two-room" name="room">
+                                <input type="checkbox" id="two-room" name="room">
                                 <label for="two-room">2-к</label>
-                                <input type="radio" id="three-room" name="room">
+                                <input type="checkbox" id="three-room" name="room">
                                 <label for="three-room">3-к</label>
-                                <input type="radio" id="four-room" name="room">
+                                <input type="checkbox" id="four-room" name="room">
                                 <label for="four-room">4-к</label>
                               </div>
                             </div>
@@ -519,7 +582,7 @@
                                 <input type="radio" id="date-2018" name="date-deliver">
                                 <label for="date-2018">2018</label>
                                 <input type="radio" id="date-2019" name="date-deliver">
-                                <label for="date-2018">2019</label>
+                                <label for="date-2019">2019</label>
                               </div>
                             </div>
                             <div class="form-group">
@@ -593,6 +656,19 @@
             </div>
           </div>
         </div>
+        <div class="footer-text-company">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <p>Как купить квартиру в новостройке в Новосибирске?</p>
+                <p>Вы читаете этот текст? Отлично! Значит, вы на правильном пути. Давайте знакомиться: наша команда собирает лучшие предложения в новостройках Новосибирска и показывает их вам. Чтобы выбрать подходящую и надежную новостройку в Новосибирске, достаточно соблюдать вот такой небольшой список полезных советов. И тогда купить квартиру в Новосибирске не составит труда! Поехали?</p>
+                <p>Совет 1. Полная и достоверная информация о застройщиках Новосибирска. Наверняка каждый слышал историю от своих друзей и знакомых о покупке квартиры у недобросовестных застройщиков. Мол, денег заплатили, а квартиры нет. Это обидно и неприятно. К сожалению, такое часто случается, когда хочется сэкономить на покупке квартиры. Здесь самое главное – не гнаться за низкими ценами (стоимость «ниже рынка» - подозрительно!), а рассуждать с холодной головой. А это значит: проверить документы, отзывы, все-все подробности прежде чем купить квартиру. Новосибирск – это город, который активно строится, и есть большой выбор. Наша команда поможет Вас в выборе действительно надежного застройщика.</p>
+                <p>Совет 2. Свои возможности при покупке новостройки. Новосибирск славится большим ассортиментом квартир. От небольших студий до пентхаусов, от загородных домов до хай-флетов. Были бы возможности… вот о них и поговорим. Главное при покупке новостройки в Новосибирске понять свои возможности по стоимости, готовности, времени ожидания и особенностей самого жилого комплекса или проекта. Вариант, который подойдет молодому мужчине, который не спешит переезжать. Совершенно не подходит семье, которой нужна большая квартира с хорошим ремонтом в новостройке. Мы знаем, что, как бы вы ни мечтали, все равно вопрос упирается в стоимость квартиры. Поэтому купить квартиру в Новосибирске с помощью нас можно легко: просто воспользуйтесь удобными фильтрами и смотрите, какие предложения вам подходят. Также м с удовольствием поможем с покупкой квартиры в ипотеку.</p>
+                <p>Совет 3. Инфраструктура и качество жизни. Все новостройки Новосибирска, которые вы можете посмотреть на нашем сайте, мы видели лично и не один раз. И знаем, какие плюсы и особенности каждого проекта ждут вас. Купить квартиру в Новосибирске не так сложно, как кажется. Главное – выберите, что вам нравится: ухоженные газоны, красиво оформленные подъезды? Удобная транспортная развязка или качественная чистовая отделка? А может быть, вы хотите жить рядом с рекой и наслаждаться красивыми рассветами из окна? Мы будем рады помочь вам купить новостройку. Новосибирск полон невероятных возможностей – давайте выбирать квартиру вместе!</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="footer-top">
           <div class="container">
             <div class="row align-center">
@@ -610,6 +686,8 @@
     <script src="static/js/libs.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.10/js/bootstrap-multiselect.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
     <script src="static/js/main.js"></script>
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
   </body>
