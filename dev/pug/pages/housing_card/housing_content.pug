@@ -112,17 +112,19 @@
 								tr
 									th
 									th Планировка
+									th Адрес
 									th Этаж
 									th Площадь (кв.м)
 									th Срок сдачи
 									th Цена за кв.м. от
 									th Цена квартиры от (руб.)
-								each object in [1, 2, 3, 4, 5, 6, 7]
+								each object in [1]
 									tr
 										td
 											a(href="#", onclick="openModalImage(event, '/static/img/content/houseroom/houseroom.jpg')") План
 										td.first-cell
 											span Студия
+										td(style="width: 100px") Немировича Данченко, 22
 										td 2/12
 										td 100/44/12
 										td II кв. 2018
