@@ -25,6 +25,13 @@ html(lang="ru-RU")
 			.content
 				block content
 			include ../modules/footer
+		.modal-lids
+			span.modal-lids__close
+			h4.modal-lids__title Не нашли что искали?<br>Наш специалист перезвонит и поможет вам найти лучший вариант!
+			form.modal-lids__form
+				input(type="text", placeholder="+7 (XXX) XXX-XX-XX").modal-lids__input
+				input(type="submit", value="Позвоните мне").modal-lids__submit
+			a(href="#").modal-lids__close_down Нет, спасибо
 		script(src="static/js/jquery.js")
 		script(src="static/js/libs.min.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
