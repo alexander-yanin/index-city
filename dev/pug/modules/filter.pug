@@ -2,21 +2,28 @@
 	button.filter-toggle Открыть фильтр
 	.filter
 		.row.center
-			//.col-md-2.col-lg-2.col-sm-6
-			each object in filter
+			.filter-row
 				.form-group.filter-item
-					label.filter-title= object.title
+					label.filter-title Район
 					select(multiple="multiple").form-control.filter-select
-						option= object.option
-						option= object.option1
-						option= object.option2
-						option= object.option3
-						option= object.option4
-						option= object.option5
-			.form-group.filter-item.check
-				input(type="checkbox" id="passed")
-				label(for="passed") Дом сдан
-				input(type="checkbox" id="beside-metro")
-				label(for="beside-metro") Рядом с метро
-			.form-group.filter-item
-				button.search-button Найти
+				.form-group.filter-item
+					label.filter-title Метро
+					select(multiple="multiple").form-control.filter-select
+				.form-group.filter-item
+					label.filter-title Материал стен
+					select(multiple="multiple").form-control.filter-select
+				.form-group.filter-item
+					button.search-button Найти
+			.filter-row
+				.form-group.filter-item
+					label.filter-title Год сдачи
+					select(multiple="multiple").form-control.filter-select
+				.form-group.filter-item
+					label.filter-title Квартал сдачи
+					select(multiple="multiple").form-control.filter-select
+				.form-group.filter-item.check
+					input(type="checkbox" id="passed")
+					label(for="passed") Дом сдан
+					input(type="checkbox" id="beside-metro")
+					label(for="beside-metro") Рядом с метро
+		

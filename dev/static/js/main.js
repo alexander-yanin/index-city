@@ -229,6 +229,7 @@ $(document).ready(function() {
 });
 
 $(".filter-toggle").on("click", function () {
+    console.log("sad");
     var filter = $(".filter");
     if (filter.css("display") === "none") {
         $(this).text("Закрыть фильтр");

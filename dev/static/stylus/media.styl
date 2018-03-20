@@ -183,18 +183,43 @@
     margin 0 auto 30px
     width 90%
     height auto
+  
+  .filter-wrapper .filter-row
+    flex-direction: column
+    align-items center
+
+  .filter-wrapper .filter .filter-item
+    width 100%
+    display flex
+    flex-direction: column
+    align-items: center
+    margin-bottom 10px
 
 @media (max-width 450px)
+  .request-call
+    font-size 13px !important
+    line-height: 2.4 !important
+    width auto !important
+  .header-phone
+    font-size 20px !important
+  .exclus-offer
+    font-size 12px
+  .footer-top__info.call
+    width auto
+    line-height: 3 !important
+    font-size 11px !important
+  .enroll-banner a
+    margin-top 0
   .filter-wrapper
     margin-top 0
   .filter
-    display none
+    display none !important
     .center
       flex-direction column
       align-items center
 
       .filter-item
-        width 180px
+        //width 180px
 
       select
         width 100%
